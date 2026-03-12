@@ -85,7 +85,7 @@ const Home = () => {
   const [rankingsData, setRankingsData] = useState({});
 
   useEffect(() => {
-    fetch('/elo_rankings.json')
+    fetch(`${import.meta.env.BASE_URL}elo_rankings.json`)
       .then((res) => res.json())
       .then((data) => setRankingsData(data))
       .catch((err) => console.error('Error cargando elo_rankings.json:', err));
