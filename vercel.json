@@ -1,7 +1,7 @@
 {
+  "framework": "astro",
+  "rootDirectory": "frontend",
   "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "installCommand": "npm install",
-  "framework": "vite",
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "devCommand": "npm run dev -- --port $PORT",
+  "installCommand": "npm install"
 }

@@ -5,11 +5,13 @@ import { Instagram, Youtube } from 'lucide-react';
 import logoImage from '../../assets/main_logo.jpg';
 
 const Header = () => {
+  const logoSrc = typeof logoImage === 'object' ? logoImage.src : logoImage;
+
   return (
     <header className="header">
       <div className="header-left">
         <div className="logo-container">
-          <img src={logoImage} alt="MFL Logo" className="main-logo" />
+          <img src={logoSrc} alt="MFL Logo" className="main-logo" />
         </div>
         <div className="header-titles">
           <h1 className="title-main">MINI FOOTBALL LEAGUES</h1>

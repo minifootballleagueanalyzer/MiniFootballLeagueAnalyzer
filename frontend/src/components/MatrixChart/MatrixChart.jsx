@@ -118,7 +118,7 @@ const MatrixChart = ({ equipoHome, logoHome, equipoAway, logoAway, probHome, pro
           <div className="panel-box panel-home">
             <span className="panel-prob">{matrixData.homeWinProb.toFixed(1)}%</span>
             <span className="panel-title">VICTORIA LOCAL</span>
-            {logoHome && <img src={logoHome} alt={equipoHome} className="panel-logo" onError={(e) => { e.target.src = murciaFlag; }} />}
+            {logoHome && <img src={logoHome} alt={equipoHome} className="panel-logo" onError={(e) => { e.target.src = typeof murciaFlag === 'object' ? murciaFlag.src : murciaFlag; }} />}
             <span className="panel-team">{equipoHome?.substring(0, 15)}</span>
             <span className="panel-xg">{matrixData.xgHome.toFixed(2)} xG</span>
           </div>
@@ -131,7 +131,7 @@ const MatrixChart = ({ equipoHome, logoHome, equipoAway, logoAway, probHome, pro
           <div className="panel-box panel-away">
             <span className="panel-prob">{matrixData.awayWinProb.toFixed(1)}%</span>
             <span className="panel-title">VICTORIA VISITANTE</span>
-            {logoAway && <img src={logoAway} alt={equipoAway} className="panel-logo" onError={(e) => { e.target.src = murciaFlag; }} />}
+            {logoAway && <img src={logoAway} alt={equipoAway} className="panel-logo" onError={(e) => { e.target.src = typeof murciaFlag === 'object' ? murciaFlag.src : murciaFlag; }} />}
             <span className="panel-team">{equipoAway?.substring(0, 15)}</span>
             <span className="panel-xg">{matrixData.xgAway.toFixed(2)} xG</span>
           </div>

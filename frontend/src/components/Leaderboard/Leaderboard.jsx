@@ -32,10 +32,10 @@ const Leaderboard = ({ rankings = [] }) => {
 
             <div className="col-team">
               <img
-                src={team.logo || murciaFlag}
+                src={team.logo || (typeof murciaFlag === 'object' ? murciaFlag.src : murciaFlag)}
                 alt={team.equipo}
                 className="team-logo-image"
-                onError={(e) => { e.target.src = murciaFlag; }}
+                onError={(e) => { e.target.src = typeof murciaFlag === 'object' ? murciaFlag.src : murciaFlag; }}
               />
               <span className="team-name">{team.equipo}</span>
             </div>

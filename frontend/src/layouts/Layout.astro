@@ -1,0 +1,31 @@
+---
+import Header from '../components/Header/Header';
+import ChatbotWidget from '../components/ChatbotWidget/ChatbotWidget';
+import '../index.css';
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title || 'Mini Football League Analyzer'}</title>
+    <link rel="icon" type="image/svg+xml" href="/astro.svg" />
+    <meta name="description" content="Análisis de ELO y estadísticas de la Mini Football League" />
+</head>
+<body>
+    <div class="app-container">
+        <Header client:load />
+        <main class="main-content">
+            <slot />
+        </main>
+        <ChatbotWidget client:load />
+    </div>
+</body>
+</html>
+
+<style is:global>
+    /* Estilos globales si son necesarios, o importar el index.css arriba */
+</style>

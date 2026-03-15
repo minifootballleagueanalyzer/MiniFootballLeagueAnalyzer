@@ -2,9 +2,9 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Home.css';
 import { ChevronDown } from 'lucide-react';
-import murciaFlag from '../assets/murcia_flag.jpeg';
-import Leaderboard from '../components/Leaderboard/Leaderboard';
-import MatrixChart from '../components/MatrixChart/MatrixChart';
+import murciaFlag from '../../assets/murcia_flag.jpeg';
+import Leaderboard from '../Leaderboard/Leaderboard';
+import MatrixChart from '../MatrixChart/MatrixChart';
 
 const LEAGUES = [
   { id: 'prim_div_mur', name: 'Primera División Murcia', flag: murciaFlag },
@@ -28,10 +28,12 @@ const CustomSelect = ({ label, options, value, onChange, placeholder }) => {
 
   // Determinar la opción seleccionada o el placeholder
   const selectedOption = options.find((opt) => opt.id === value);
+  const getAssetSrc = (asset) => typeof asset === 'object' ? asset.src : asset;
+
   const displayValue = selectedOption ? (
     <div className="select-value-with-icon">
-      {selectedOption.flag && <img src={selectedOption.flag} alt="" className="select-flag" />}
-      {selectedOption.logo && <img src={selectedOption.logo} alt="" className="select-logo" />}
+      {selectedOption.flag && <img src={getAssetSrc(selectedOption.flag)} alt="" className="select-flag" />}
+      {selectedOption.logo && <img src={getAssetSrc(selectedOption.logo)} alt="" className="select-logo" />}
       <span>{selectedOption.name}</span>
     </div>
   ) : (
@@ -66,8 +68,8 @@ const CustomSelect = ({ label, options, value, onChange, placeholder }) => {
                   setIsOpen(false);
                 }}
               >
-                {opt.flag && <img src={opt.flag} alt="" className="select-flag" />}
-                {opt.logo && <img src={opt.logo} alt="" className="select-logo" />}
+                {opt.flag && <img src={getAssetSrc(opt.flag)} alt="" className="select-flag" />}
+                {opt.logo && <img src={getAssetSrc(opt.logo)} alt="" className="select-logo" />}
                 <span>{opt.name}</span>
               </div>
             ))}
@@ -78,18 +80,17 @@ const CustomSelect = ({ label, options, value, onChange, placeholder }) => {
   );
 };
 
-const Home = () => {
+const Home = ({ rankingsData: initialRankingsData }) => {
   const [selectedLeague, setSelectedLeague] = useState('');
   const [selectedTeamA, setSelectedTeamA] = useState('');
   const [selectedTeamB, setSelectedTeamB] = useState('');
-  const [rankingsData, setRankingsData] = useState({});
+  const [rankingsData, setRankingsData] = useState(initialRankingsData || {});
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}elo_rankings.json`)
-      .then((res) => res.json())
-      .then((data) => setRankingsData(data))
-      .catch((err) => console.error('Error cargando elo_rankings.json:', err));
-  }, []);
+    if (initialRankingsData) {
+      setRankingsData(initialRankingsData);
+    }
+  }, [initialRankingsData]);
 
   // Teams to populate the H2H dropdown based on selected league
   const leagueTeams = useMemo(() => {
