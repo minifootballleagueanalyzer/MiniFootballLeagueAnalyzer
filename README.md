@@ -33,11 +33,27 @@ La web también muestra un menú desplegable permitiendo escoger dos equipo dent
   - Reparto del Gol	100% ->	Si el valor es alto, el equipo no depende de un solo hombre.
   - Diferencia de Gol -> El balance general de competitividad.
 
-## Estructura del proyecto
+## Workflow del Proyecto
 
-Se divide principalmente en dos grandes bloques: un motor de recolección y cálculo de datos (Backend en Python) y una interfaz gráfica moderna para visualización de estadísticas (Frontend hecho en React + Vite).
+```mermaid
+graph TD
+    A[Minifootballleagues.com] -->|Scraping: Selenium + BS4| B(league_scraping.py)
+    B -->|Datos Raw| C[(jsons/*.json)]
+    C --> D(simulacion_final.py)
+    D -->|ELO Ranking & Stats| E[(frontend/public/*.json)]
+    
+    subgraph GitHub_Actions [GitHub Actions - 02:00 UTC]
+        B
+        D
+        F[Git Commit & Push]
+    end
+    
+    E --> F
+    F -->|Trigger| G[Vercel Deployment]
+    G -->|Astro SSG Build| H[Web Frontend]
+    H -->|Visualización| I[Usuario Final]
+```
 
-Más info en [AGENTS.md](AGENTS.md).
 
 ### Backend
 
@@ -53,15 +69,10 @@ Basado en sistema ELO tradicional, pero incluye 2 multiplicadores analíticos:
 
 Los JSONs son inyectados dentro del algoritmo y se exporta un ranking global en otro archivo JSON (`elo_rankings.json`).
 
-#### H2H (Enfrentamientos directos)
+### H2H (Enfrentamientos directos)
 
-#### Automatización
+### Automatización
 Los datos se actualizan diariamente mediante CI / GitHub Actions.   
-
-### Frontend
-
-- Funciona con **Astro y React**, garantizando tiempos de carga muy rápidos.
-- Incluye herramientas como **Chart.js y React-Chartjs-2** para las visualizaciones y gráficos con datos estadísticos complejos (como el Gráfico de Radar)
 
 ### Chatbot 
 
