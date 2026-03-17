@@ -132,48 +132,78 @@ for comp in competiciones:
     driver.get(url_stats)
     
     goleadores = []
+    nombres_procesados = set()
     try:
-        # Esperamos a que cargue la tabla o el card
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, "//*[contains(@class, 'Ranking_playerName') or contains(@class, 'Ranking_text')]"))
-        )
-        time.sleep(2)
-        
+        # 0. Expandir la lista pulsando "Ver más" (chevron)
+        try:
+            # Buscamos el botón de footer que contiene el 'Ver más'
+            btn_ver_mas = WebDriverWait(driver, 5).until(
+                EC.presence_of_element_located((By.CLASS_NAME, "DataTable_footerSectionButton__PVGss"))
+            )
+            
+            # Verificamos si el chevron apunta hacia abajo (d contiene '16.4999')
+            # Si apunta hacia arriba ('8.78201'), ya está expandido o no se debe tocar
+            svg_path = btn_ver_mas.find_element(By.TAG_NAME, "path")
+            d_attr = svg_path.get_attribute("d")
+            
+            if "16.4999" in d_attr:
+                print("  Expandiendo lista de goleadores...")
+                driver.execute_script("arguments[0].click();", btn_ver_mas)
+                time.sleep(3)  # Esperar a que cargue la lista completa
+            else:
+                print("  La lista ya parece estar expandida o no hay más datos.")
+                
+        except Exception as e:
+            # Si no hay botón, es que hay menos de 10 goleadores
+            pass
+
         soup_stats = BeautifulSoup(driver.page_source, 'html.parser')
         
         # 1. Jugador #1 (Tarjeta especial arriba)
-        top_card = soup_stats.find('div', class_=lambda c: c and 'Ranking_topRankingHeaderContainer' in c)
-        if top_card:
+        # El contenedor principal que engloba tanto el nombre como los stats (goles)
+        top_container = soup_stats.find('div', class_=lambda c: c and 'Ranking_topRankingContainer' in c)
+        if top_container:
             try:
-                nombre_elem = top_card.find('p', class_=lambda c: c and 'Ranking_playerName' in c)
-                goles_elem = top_card.find('p', class_=lambda c: c and 'Ranking_dorsal' in c)
+                nombre_elem = top_container.find('p', class_=lambda c: c and 'Ranking_playerName' in c)
+                
+                # Los goles están en un Ranking_value dentro de Ranking_labelValuesContainer
+                # Buscamos el valor asociado a la etiqueta "GOLES"
+                goles_val = "0"
+                stats_labels = top_container.find_all(['p', 'span'], class_=lambda c: c and 'Ranking_label' in c)
+                stats_values = top_container.find_all(['p', 'span'], class_=lambda c: c and 'Ranking_value' in c)
+                
+                for i, label in enumerate(stats_labels):
+                    if "GOLES" in label.get_text().upper() and i < len(stats_values):
+                        goles_val = stats_values[i].get_text(strip=True)
+                        break
+                
+                # Equipo: Buscamos p, span o enlaces con la clase equipo o que apunten a /teams/
+                equipo_elem = top_container.find(['p', 'span', 'a'], class_=lambda c: c and 'Ranking_teamName' in c)
+                if not equipo_elem:
+                    # Fallback: buscar cualquier enlace que contenga /teams/ pero que no sea el jugador
+                    team_links = top_container.find_all('a', href=lambda h: h and '/teams/' in h)
+                    for link in team_links:
+                        if '/players/' not in link.get_attribute_list('href')[0]:
+                            equipo_elem = link
+                            break
+                            
+                equipo_nombre = equipo_elem.get_text(strip=True).title() if equipo_elem else "Desconocido"
                 
                 # Imagen
-                img_elem = top_card.find('img', class_=lambda c: c and 'Avatar_img' in c)
+                img_elem = top_container.find('img', class_=lambda c: c and 'Ranking_playerAvatar' in c)
                 avatar_url = img_elem['src'] if img_elem and 'src' in img_elem.attrs else ""
                 if avatar_url.startswith('/'):
                     avatar_url = f"https://minifootballleagues.com{avatar_url}"
                 
-                # Equipo: Buscamos un p hermano o hijo del contenedor que no sea el nombre
-                # O buscamos cualquier enlace de equipo
-                equipo_elem = None
-                links = top_card.find_all('a', href=lambda h: h and '/teams/' in h)
-                # El enlace suele ser /tournaments/X/teams/Y/players/Z, pero a veces hay un link de equipo puro
-                # Si no, buscamos el texto del equipo
-                equipo_nombre = "Desconocido"
-                for link in links:
-                    txt = link.get_text(strip=True)
-                    if txt and txt != nombre_elem.get_text(strip=True):
-                        equipo_nombre = txt
-                        break
-                
-                if nombre_elem and goles_elem:
-                    goleadores.append({
-                        "nombre": nombre_elem.get_text(strip=True),
+                if nombre_elem:
+                    nom = nombre_elem.get_text(strip=True)
+                    goleadores.insert(0, { # Aseguramos que el #1 sea el primero
+                        "nombre": nom,
                         "equipo": equipo_nombre,
-                        "goles": int(goles_elem.get_text(strip=True)) if goles_elem.get_text(strip=True).isdigit() else 0,
+                        "goles": int(goles_val) if goles_val.isdigit() else 0,
                         "avatar": avatar_url
                     })
+                    nombres_procesados.add((nom.lower(), equipo_nombre.lower()))
             except Exception as e:
                 print(f"  Error en Top #1: {e}")
 
@@ -194,16 +224,24 @@ for comp in competiciones:
                     goles_val = tds[4].get_text(strip=True)
                     
                     if nombre_elem and goles_val.isdigit():
+                        nom = nombre_elem.get_text(strip=True)
+                        eq = equipo_elem.get_text(strip=True).title()
+                        
+                        # Evitar duplicado con el #1 u otros
+                        if (nom.lower(), eq.lower()) in nombres_procesados:
+                            continue
+                            
                         avatar_url = img_elem['src'] if img_elem and 'src' in img_elem.attrs else ""
                         if avatar_url.startswith('/'):
                             avatar_url = f"https://minifootballleagues.com{avatar_url}"
                             
                         goleadores.append({
-                            "nombre": nombre_elem.get_text(strip=True),
-                            "equipo": equipo_elem.get_text(strip=True),
+                            "nombre": nom,
+                            "equipo": eq,
                             "goles": int(goles_val),
                             "avatar": avatar_url
                         })
+                        nombres_procesados.add((nom.lower(), eq.lower()))
             except Exception as e:
                 continue
 

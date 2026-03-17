@@ -58,10 +58,7 @@
 .scorer-name {
   font-size: 1rem;
   font-weight: 500;
-  max-width: 150px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  flex: 1;
 }
 
 .scorer-goals-badge {
