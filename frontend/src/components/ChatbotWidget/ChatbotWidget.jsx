@@ -5,20 +5,26 @@ import './ChatbotWidget.css';
 const PRESET_QUESTIONS = [
   '¿Qué es el ranking ELO?',
   '¿Por qué no coincide el ranking ELO con la clasificación por puntos?',
-  '¿Cuál es el mejor equipo de la 3ª División Grupo B y por qué?',
-  '¿Qué equipo tiene más puntos ELO en toda la liga?',
+  '¿Qué es el xG?',
+  '¿Cuál es el mejor equipo de esta división?',
+  '¿Cuál es el peor equipo de esta división?',
   '¿Qué equipo tiene menos puntos ELO de todas las ligas?',
-  '¿Cuál es el mejor equipo?'
+  '¿Cuál es el mejor equipo de todas las ligas?',
+  '¿Qué equipo ha tenido peor rendimiento las últimas 5 jornadas?',
+  '¿Qué equipo ha tenido mejor rendimiento las últimas 5 jornadas?',
 ];
 
 // Contextos de liga disponibles
 const LEAGUE_CONTEXTS = [
-  { key: 'prim_div_mur',  label: '1ª División' },
-  { key: 'seg_div_murA',  label: '2ª Div. Grupo A' },
-  { key: 'seg_div_murB',  label: '2ª Div. Grupo B' },
-  { key: 'ter_div_murA',  label: '3ª Div. Grupo A' },
-  { key: 'ter_div_murB',  label: '3ª Div. Grupo B' },
-  { key: 'cuar_div_mur',  label: '4ª División' },
+  { key: 'prim_div_mur', label: '1ª Murcia' },
+  { key: 'seg_div_murA', label: '2ªA Murcia' },
+  { key: 'seg_div_murB', label: '2ªB Murcia' },
+  { key: 'ter_div_murA', label: '3ªA Murcia' },
+  { key: 'ter_div_murB', label: '3ªB Murcia' },
+  { key: 'cuar_div_mur', label: '4ª Murcia' },
+  { key: 'prim_div_gra', label: '1ª Granada' },
+  { key: 'seg_div_gra', label: '2ª Granada' },
+  { key: 'veteranos_gra', label: 'Vet. Granada' },
 ];
 
 export default function ChatbotWidget() {
@@ -153,7 +159,7 @@ export default function ChatbotWidget() {
         {/* Selector de contexto de liga */}
         <div className="chatbot-context">
           <p className="chatbot-presets__label">
-            Contexto de liga
+            Elige liga
             {activeContext && (
               <span className="chatbot-context__active-label">
                 {' '}· {LEAGUE_CONTEXTS.find(l => l.key === activeContext)?.label}

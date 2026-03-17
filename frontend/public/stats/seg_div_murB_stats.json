@@ -1,0 +1,56 @@
+[
+    {
+        "nombre": "Tihomir Arkadiev Metodiev",
+        "equipo": "FC La Yanka",
+        "goles": 11,
+        "avatar": "https://minifootballleagues.com/upload/17/DA/cebaghcf.jpg"
+    },
+    {
+        "nombre": "Juan Carlos  Nortes Lopez",
+        "equipo": "Raal Murcia",
+        "goles": 11,
+        "avatar": "https://minifootballleagues.com/upload/6F/95/rypu0ezv.jpg"
+    },
+    {
+        "nombre": "Elías Ezequiel Aquino Gómez",
+        "equipo": "Niupi",
+        "goles": 10,
+        "avatar": "https://minifootballleagues.com/upload/07/8D/kjw2gp4q.jpg"
+    },
+    {
+        "nombre": "Paco Marín Martínez",
+        "equipo": "Raal Murcia",
+        "goles": 10,
+        "avatar": "https://minifootballleagues.com/upload/imagesv2/avatars/image 3005.png"
+    },
+    {
+        "nombre": "PABLO RODRIGUEZ GUERRERO",
+        "equipo": "Sabomur Stars",
+        "goles": 8,
+        "avatar": "https://minifootballleagues.com/upload/5D/AC/aoawmlwv.jpg"
+    },
+    {
+        "nombre": "JAIME SERRANO GONZALEZ",
+        "equipo": "Sabomur Stars",
+        "goles": 8,
+        "avatar": "https://minifootballleagues.com/upload/imagesv2/avatars/Avatar_Player_18.png"
+    },
+    {
+        "nombre": "Daniel García Bañón",
+        "equipo": "Los Trakas",
+        "goles": 8,
+        "avatar": "https://minifootballleagues.com/upload/F9/7C/blkycqon.jpg"
+    },
+    {
+        "nombre": "Alejandro García Bañon",
+        "equipo": "Los Trakas",
+        "goles": 7,
+        "avatar": "https://minifootballleagues.com/static/user/default3.png"
+    },
+    {
+        "nombre": "Aarón Castillo Cuenca",
+        "equipo": "Sabomur Stars",
+        "goles": 7,
+        "avatar": "https://minifootballleagues.com/upload/imagesv2/avatars/Pele.png"
+    }
+]

@@ -19,6 +19,9 @@ Se incluyen las siguientes competiciones de F7:
 - Tercera División A Murcia
 - Tercera División B Murcia
 - Cuarta División Murcia
+- Primera División Granada
+- Segunda División Granada
+- Liga Veteranos (+35) Granada
 
 La web también muestra un menú desplegable permitiendo escoger dos equipo dentro de cada competición. Para cada pareja de equipos se incluirá:
 

@@ -1,0 +1,56 @@
+[
+    {
+        "nombre": "David Paredes Carracelas",
+        "equipo": "San Miguel",
+        "goles": 19,
+        "avatar": "https://minifootballleagues.com/upload/imagesv2/avatars/image 3005.png"
+    },
+    {
+        "nombre": "Alejandro Hernández Leante",
+        "equipo": "Chanetis FC",
+        "goles": 19,
+        "avatar": "https://minifootballleagues.com/upload/BE/4E/jr1fv5j0.jpg"
+    },
+    {
+        "nombre": "Fulgencio Martínez Garcia",
+        "equipo": "La Magia AD",
+        "goles": 18,
+        "avatar": "https://minifootballleagues.com/upload/imagesv2/avatars/LevYashin.png"
+    },
+    {
+        "nombre": "Juan Carlos Madrid Garcia",
+        "equipo": "Atlético Barqueros",
+        "goles": 18,
+        "avatar": "https://minifootballleagues.com/upload/44/56/sebx3fyr.jpg"
+    },
+    {
+        "nombre": "Juan Manuel Terres Gonzalez",
+        "equipo": "Atlético Luisenburgo",
+        "goles": 17,
+        "avatar": "https://minifootballleagues.com/upload/CD/30/sji4hnzj.jpg"
+    },
+    {
+        "nombre": "José Manuel Martinez Lopez",
+        "equipo": "Inter Aljucer FC",
+        "goles": 15,
+        "avatar": "https://minifootballleagues.com/upload/B1/4A/hvycyp5x.jpg"
+    },
+    {
+        "nombre": "Deyvison  Queiroz",
+        "equipo": "Inter Aljucer FC",
+        "goles": 15,
+        "avatar": "https://minifootballleagues.com/upload/DC/24/xhxf0mt2.jpg"
+    },
+    {
+        "nombre": "Francisco José Vidal-Salmerón Gómez",
+        "equipo": "Trufa Team",
+        "goles": 15,
+        "avatar": "https://minifootballleagues.com/upload/06/48/5hqcpawe.jpg"
+    },
+    {
+        "nombre": "Alejandro  Ramirez Jimenez",
+        "equipo": "Trufa Team",
+        "goles": 14,
+        "avatar": "https://minifootballleagues.com/upload/78/6F/zfxljvco.jpg"
+    }
+]

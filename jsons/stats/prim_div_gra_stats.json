@@ -1,0 +1,56 @@
+[
+    {
+        "nombre": "Marcos Martinez Martinez",
+        "equipo": "Nazarí Rentahoy",
+        "goles": 14,
+        "avatar": "https://minifootballleagues.com/upload/3E/23/szg0swvs.jpg"
+    },
+    {
+        "nombre": "Victor Lallave Ruiz",
+        "equipo": "Cabalas FC",
+        "goles": 10,
+        "avatar": "https://minifootballleagues.com/upload/BA/B4/0uzlioj0.jpg"
+    },
+    {
+        "nombre": "Daniel  Granizo Martinez",
+        "equipo": "Cabalas FC",
+        "goles": 8,
+        "avatar": "https://minifootballleagues.com/upload/B6/4B/zqvjjpon.jpg"
+    },
+    {
+        "nombre": "Julián Zafra Salcedo",
+        "equipo": "Peña 90+3",
+        "goles": 8,
+        "avatar": "https://minifootballleagues.com/upload/84/8D/p24hxved.jpg"
+    },
+    {
+        "nombre": "Daniel Gil Pérez",
+        "equipo": "Granada Orígen",
+        "goles": 7,
+        "avatar": "https://minifootballleagues.com/upload/imagesv2/avatars/Maradona.png"
+    },
+    {
+        "nombre": "Mario Valenzuela Mañas",
+        "equipo": "Nazarí Rentahoy",
+        "goles": 7,
+        "avatar": "https://minifootballleagues.com/upload/6A/95/lpckhvd1.jpg"
+    },
+    {
+        "nombre": "Angel Calvache Caballero",
+        "equipo": "Napoli",
+        "goles": 7,
+        "avatar": "https://minifootballleagues.com/upload/11/3E/oc4kydan.jpg"
+    },
+    {
+        "nombre": "Nicolas Daniel Zapata",
+        "equipo": "Scaloneta FC",
+        "goles": 7,
+        "avatar": "https://minifootballleagues.com/upload/8A/6D/3k2d4yvw.jpg"
+    },
+    {
+        "nombre": "Eduardo López Guerrero",
+        "equipo": "Ultimate Granada",
+        "goles": 7,
+        "avatar": "https://minifootballleagues.com/upload/76/B7/5gcyc5ug.jpg"
+    }
+]

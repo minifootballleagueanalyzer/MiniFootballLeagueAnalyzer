@@ -1,0 +1,317 @@
+[
+    {
+        "jornada": 1,
+        "equipo_local": "Churriana",
+        "escudo_local": "https://minifootballleagues.com/upload/DB/87/pqcx3oan.jpg",
+        "equipo_visitante": "Otura",
+        "escudo_visitante": "https://minifootballleagues.com/upload/2D/59/sbvso0it.jpg",
+        "goles_local": 5,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Celtic Pulianas",
+        "escudo_local": "https://minifootballleagues.com/upload/57/23/2et10o3l.jpeg",
+        "equipo_visitante": "Joanfran Albolote",
+        "escudo_visitante": "https://minifootballleagues.com/upload/9E/C2/rurgmpoq.jpeg",
+        "goles_local": 1,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Ogijares 89 Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/0E/0A/c1zpco4y.jpeg",
+        "equipo_visitante": "Monachil",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default2.png",
+        "goles_local": 5,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Peña Fútbol Villanueva Mesia",
+        "escudo_local": "https://minifootballleagues.com/upload/F6/2A/rtx1a5cv.png",
+        "equipo_visitante": "Atlético La Zubia",
+        "escudo_visitante": "https://minifootballleagues.com/upload/7E/52/pkedatie.jpg",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Monachil",
+        "escudo_local": "https://minifootballleagues.com/static/team/default2.png",
+        "equipo_visitante": "Celtic Pulianas",
+        "escudo_visitante": "https://minifootballleagues.com/upload/57/23/2et10o3l.jpeg",
+        "goles_local": 1,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Otura",
+        "escudo_local": "https://minifootballleagues.com/upload/2D/59/sbvso0it.jpg",
+        "equipo_visitante": "Ogijares 89 Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/0E/0A/c1zpco4y.jpeg",
+        "goles_local": 3,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Atlético La Zubia",
+        "escudo_local": "https://minifootballleagues.com/upload/7E/52/pkedatie.jpg",
+        "equipo_visitante": "Churriana",
+        "escudo_visitante": "https://minifootballleagues.com/upload/DB/87/pqcx3oan.jpg",
+        "goles_local": 1,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Joanfran Albolote",
+        "escudo_local": "https://minifootballleagues.com/upload/9E/C2/rurgmpoq.jpeg",
+        "equipo_visitante": "Peña Fútbol Villanueva Mesia",
+        "escudo_visitante": "https://minifootballleagues.com/upload/F6/2A/rtx1a5cv.png",
+        "goles_local": 8,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Celtic Pulianas",
+        "escudo_local": "https://minifootballleagues.com/upload/57/23/2et10o3l.jpeg",
+        "equipo_visitante": "Otura",
+        "escudo_visitante": "https://minifootballleagues.com/upload/2D/59/sbvso0it.jpg",
+        "goles_local": 5,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Ogijares 89 Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/0E/0A/c1zpco4y.jpeg",
+        "equipo_visitante": "Atlético La Zubia",
+        "escudo_visitante": "https://minifootballleagues.com/upload/7E/52/pkedatie.jpg",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Peña Fútbol Villanueva Mesia",
+        "escudo_local": "https://minifootballleagues.com/upload/F6/2A/rtx1a5cv.png",
+        "equipo_visitante": "Churriana",
+        "escudo_visitante": "https://minifootballleagues.com/upload/DB/87/pqcx3oan.jpg",
+        "goles_local": 3,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Monachil",
+        "escudo_local": "https://minifootballleagues.com/static/team/default2.png",
+        "equipo_visitante": "Peña Fútbol Villanueva Mesia",
+        "escudo_visitante": "https://minifootballleagues.com/upload/F6/2A/rtx1a5cv.png",
+        "goles_local": 1,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Atlético La Zubia",
+        "escudo_local": "https://minifootballleagues.com/upload/7E/52/pkedatie.jpg",
+        "equipo_visitante": "Celtic Pulianas",
+        "escudo_visitante": "https://minifootballleagues.com/upload/57/23/2et10o3l.jpeg",
+        "goles_local": 5,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Otura",
+        "escudo_local": "https://minifootballleagues.com/upload/2D/59/sbvso0it.jpg",
+        "equipo_visitante": "Joanfran Albolote",
+        "escudo_visitante": "https://minifootballleagues.com/upload/9E/C2/rurgmpoq.jpeg",
+        "goles_local": 1,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Churriana",
+        "escudo_local": "https://minifootballleagues.com/upload/DB/87/pqcx3oan.jpg",
+        "equipo_visitante": "Ogijares 89 Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/0E/0A/c1zpco4y.jpeg",
+        "goles_local": 0,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Joanfran Albolote",
+        "escudo_local": "https://minifootballleagues.com/upload/9E/C2/rurgmpoq.jpeg",
+        "equipo_visitante": "Atlético La Zubia",
+        "escudo_visitante": "https://minifootballleagues.com/upload/7E/52/pkedatie.jpg",
+        "goles_local": 9,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Celtic Pulianas",
+        "escudo_local": "https://minifootballleagues.com/upload/57/23/2et10o3l.jpeg",
+        "equipo_visitante": "Churriana",
+        "escudo_visitante": "https://minifootballleagues.com/upload/DB/87/pqcx3oan.jpg",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Peña Fútbol Villanueva Mesia",
+        "escudo_local": "https://minifootballleagues.com/upload/F6/2A/rtx1a5cv.png",
+        "equipo_visitante": "Ogijares 89 Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/0E/0A/c1zpco4y.jpeg",
+        "goles_local": 1,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Monachil",
+        "escudo_local": "https://minifootballleagues.com/static/team/default2.png",
+        "equipo_visitante": "Otura",
+        "escudo_visitante": "https://minifootballleagues.com/upload/2D/59/sbvso0it.jpg",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Peña Fútbol Villanueva Mesia",
+        "escudo_local": "https://minifootballleagues.com/upload/F6/2A/rtx1a5cv.png",
+        "equipo_visitante": "Otura",
+        "escudo_visitante": "https://minifootballleagues.com/upload/2D/59/sbvso0it.jpg",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Atlético La Zubia",
+        "escudo_local": "https://minifootballleagues.com/upload/7E/52/pkedatie.jpg",
+        "equipo_visitante": "Monachil",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default2.png",
+        "goles_local": 3,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Churriana",
+        "escudo_local": "https://minifootballleagues.com/upload/DB/87/pqcx3oan.jpg",
+        "equipo_visitante": "Joanfran Albolote",
+        "escudo_visitante": "https://minifootballleagues.com/upload/9E/C2/rurgmpoq.jpeg",
+        "goles_local": 4,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Ogijares 89 Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/0E/0A/c1zpco4y.jpeg",
+        "equipo_visitante": "Celtic Pulianas",
+        "escudo_visitante": "https://minifootballleagues.com/upload/57/23/2et10o3l.jpeg",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Celtic Pulianas",
+        "escudo_local": "https://minifootballleagues.com/upload/57/23/2et10o3l.jpeg",
+        "equipo_visitante": "Peña Fútbol Villanueva Mesia",
+        "escudo_visitante": "https://minifootballleagues.com/upload/F6/2A/rtx1a5cv.png",
+        "goles_local": 8,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Monachil",
+        "escudo_local": "https://minifootballleagues.com/static/team/default2.png",
+        "equipo_visitante": "Churriana",
+        "escudo_visitante": "https://minifootballleagues.com/upload/DB/87/pqcx3oan.jpg",
+        "goles_local": 2,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Otura",
+        "escudo_local": "https://minifootballleagues.com/upload/2D/59/sbvso0it.jpg",
+        "equipo_visitante": "Atlético La Zubia",
+        "escudo_visitante": "https://minifootballleagues.com/upload/7E/52/pkedatie.jpg",
+        "goles_local": 1,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Joanfran Albolote",
+        "escudo_local": "https://minifootballleagues.com/upload/9E/C2/rurgmpoq.jpeg",
+        "equipo_visitante": "Ogijares 89 Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/0E/0A/c1zpco4y.jpeg",
+        "goles_local": 3,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Monachil",
+        "escudo_local": "https://minifootballleagues.com/static/team/default2.png",
+        "equipo_visitante": "Ogijares 89 Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/0E/0A/c1zpco4y.jpeg",
+        "goles_local": 1,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Atlético La Zubia",
+        "escudo_local": "https://minifootballleagues.com/upload/7E/52/pkedatie.jpg",
+        "equipo_visitante": "Peña Fútbol Villanueva Mesia",
+        "escudo_visitante": "https://minifootballleagues.com/upload/F6/2A/rtx1a5cv.png",
+        "goles_local": 7,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Otura",
+        "escudo_local": "https://minifootballleagues.com/upload/2D/59/sbvso0it.jpg",
+        "equipo_visitante": "Churriana",
+        "escudo_visitante": "https://minifootballleagues.com/upload/DB/87/pqcx3oan.jpg",
+        "goles_local": 1,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Peña Fútbol Villanueva Mesia",
+        "escudo_local": "https://minifootballleagues.com/upload/F6/2A/rtx1a5cv.png",
+        "equipo_visitante": "Joanfran Albolote",
+        "escudo_visitante": "https://minifootballleagues.com/upload/9E/C2/rurgmpoq.jpeg",
+        "goles_local": 4,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Celtic Pulianas",
+        "escudo_local": "https://minifootballleagues.com/upload/57/23/2et10o3l.jpeg",
+        "equipo_visitante": "Monachil",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default2.png",
+        "goles_local": 2,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 10,
+        "equipo_local": "Atlético La Zubia",
+        "escudo_local": "https://minifootballleagues.com/upload/7E/52/pkedatie.jpg",
+        "equipo_visitante": "Ogijares 89 Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/0E/0A/c1zpco4y.jpeg",
+        "goles_local": 4,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 10,
+        "equipo_local": "Monachil",
+        "escudo_local": "https://minifootballleagues.com/static/team/default2.png",
+        "equipo_visitante": "Joanfran Albolote",
+        "escudo_visitante": "https://minifootballleagues.com/upload/9E/C2/rurgmpoq.jpeg",
+        "goles_local": 1,
+        "goles_visitante": 10
+    },
+    {
+        "jornada": 10,
+        "equipo_local": "Otura",
+        "escudo_local": "https://minifootballleagues.com/upload/2D/59/sbvso0it.jpg",
+        "equipo_visitante": "Celtic Pulianas",
+        "escudo_visitante": "https://minifootballleagues.com/upload/57/23/2et10o3l.jpeg",
+        "goles_local": 0,
+        "goles_visitante": 6
+    }
+]

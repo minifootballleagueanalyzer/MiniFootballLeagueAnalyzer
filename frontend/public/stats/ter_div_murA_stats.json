@@ -1,0 +1,56 @@
+[
+    {
+        "nombre": "Álvaro  Guerrero Sánchez",
+        "equipo": "LC Return",
+        "goles": 12,
+        "avatar": "https://minifootballleagues.com/upload/61/4C/tmf0uyld.jpg"
+    },
+    {
+        "nombre": "Dimas Garcia Aviles",
+        "equipo": "La Tubería de Oro",
+        "goles": 12,
+        "avatar": "https://minifootballleagues.com/upload/D2/F3/tdua2jhc.jpg"
+    },
+    {
+        "nombre": "Rafa Vivancos Pacheco",
+        "equipo": "30835 FC",
+        "goles": 12,
+        "avatar": "https://minifootballlleaguesalmeria.mygol.es/upload/imagesv2/avatars/Maradona.png"
+    },
+    {
+        "nombre": "Cristian López  García",
+        "equipo": "Titanes FC",
+        "goles": 10,
+        "avatar": "https://minifootballleagues.com/upload/56/2A/dpyraqb1.jpg"
+    },
+    {
+        "nombre": "Dennis Paul Largo Ramon",
+        "equipo": "Perumur FC",
+        "goles": 10,
+        "avatar": "https://minifootballleagues.com/upload/imagesv2/avatars/image 3003.png"
+    },
+    {
+        "nombre": "José Miguel Marti Vidal",
+        "equipo": "Ribereño FC",
+        "goles": 9,
+        "avatar": "https://minifootballlleaguesalmeria.mygol.es/upload/imagesv2/avatars/DiStefano.png"
+    },
+    {
+        "nombre": "Samuel Álvarez Ortín",
+        "equipo": "Pulso CF",
+        "goles": 9,
+        "avatar": "https://minifootballlleaguesalmeria.mygol.es/upload/imagesv2/avatars/Maradona.png"
+    },
+    {
+        "nombre": "Félix González Martínez",
+        "equipo": "30835 FC",
+        "goles": 9,
+        "avatar": "https://minifootballleagues.com/upload/F6/89/jmukkh52.jpg"
+    },
+    {
+        "nombre": "Francisco Canovas Parra",
+        "equipo": "Ribereño FC",
+        "goles": 8,
+        "avatar": "https://minifootballlleaguesalmeria.mygol.es/upload/imagesv2/avatars/Cruyff.png"
+    }
+]

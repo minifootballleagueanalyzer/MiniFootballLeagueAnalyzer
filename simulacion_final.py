@@ -28,6 +28,16 @@ for archivo in archivos_json:
         with open(archivo, 'r', encoding='utf-8') as f:
             partidos = json.load(f)
 
+            # Ordenar partidos por jornada para calcular tendencia correctamente
+            partidos.sort(key=lambda x: x.get('jornada', 0))
+            
+            # Encontrar la jornada máxima
+            max_jornada = max([p.get('jornada', 0) for p in partidos]) if partidos else 0
+            jornada_corte = max_jornada - 5
+            
+            
+            ratings_antes_tendencia = {}
+
             for partido in partidos:
                 # Guardar escudos
                 def corregir_url(url):
@@ -40,8 +50,11 @@ for archivo in archivos_json:
                 if "escudo_visitante" in partido and partido["escudo_visitante"]:
                     escudos_equipos[partido['equipo_visitante']] = corregir_url(partido['escudo_visitante'])
 
-                # Si algún partido no tuviera todos los datos o estuviera pospuesto, 
-                # lo saltamos amablemente.
+                # Capturar snapshot para tendencia antes de procesar la jornada de corte
+                if partido.get('jornada', 0) > jornada_corte and not ratings_antes_tendencia:
+                    # Hacemos una copia de los ratings actuales
+                    ratings_antes_tendencia = elo_liga.ratings.copy()
+
                 if "goles_local" not in partido or "goles_visitante" not in partido:
                     continue
                     
@@ -57,18 +70,22 @@ for archivo in archivos_json:
         ranking_ordenado = sorted(elo_liga.ratings.items(), key=lambda x: x[1], reverse=True)
         
         # Guardamos los resultados bajo el ID de esta liga
-        # Formato: {"nombre_equipo": puntos_elo, "logo": url_logo, ...}
         RANKING_LISTA = []
         for i, (equipo, rating) in enumerate(ranking_ordenado):
+            elo_actual = round(rating)
+            elo_anterior = round(ratings_antes_tendencia.get(equipo, 1500))
+            tendencia = elo_actual - elo_anterior
+            
             RANKING_LISTA.append({
                 "posicion": i + 1,
                 "equipo": equipo,
-                "puntos": round(rating),
+                "puntos": elo_actual,
+                "tendencia": tendencia,
                 "logo": escudos_equipos.get(equipo, "")
             })
             
         rankings_globales[liga_id] = RANKING_LISTA
-        print(f"✅ Calculado ELO para: {liga_id}")
+        print(f"✅ Calculado ELO y tendencia para: {liga_id}")
 
     except Exception as e:
         print(f"Error procesando {archivo}: {e}")
@@ -80,4 +97,21 @@ os.makedirs(os.path.dirname(ruta_frontend), exist_ok=True)
 with open(ruta_frontend, 'w', encoding='utf-8') as f:
     json.dump(rankings_globales, f, ensure_ascii=False, indent=4)
 
-print(f"\n¡Todos los rankings calculados y exportados a: {ruta_frontend}!")
+# --- 3. COPIAR ESTADÍSTICAS DE GOLEADORES ---
+ruta_stats_source = os.path.join('jsons', 'stats')
+ruta_stats_dest = os.path.join('frontend', 'public', 'stats')
+
+if os.path.exists(ruta_stats_source):
+    
+    os.makedirs(ruta_stats_dest, exist_ok=True)
+    archivos_stats = glob.glob(os.path.join(ruta_stats_source, '*_stats.json'))
+
+    for archivo in archivos_stats:
+        nombre_archivo = os.path.basename(archivo)
+        with open(archivo, 'r', encoding='utf-8') as f_src:
+            data = json.load(f_src)
+            with open(os.path.join(ruta_stats_dest, nombre_archivo), 'w', encoding='utf-8') as f_dest:
+                json.dump(data, f_dest, ensure_ascii=False, indent=4)
+    print(f"✅ Copiadas {len(archivos_stats)} archivos de estadísticas a {ruta_stats_dest}")
+
+print(f"\n¡Todos los rankings calculados y exportados!")

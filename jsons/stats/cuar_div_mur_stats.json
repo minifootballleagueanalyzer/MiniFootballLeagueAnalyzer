@@ -1,0 +1,56 @@
+[
+    {
+        "nombre": "Dimas Lopez Martinez",
+        "equipo": "Charca",
+        "goles": 14,
+        "avatar": "https://minifootballleagues.com/upload/B7/62/otrwug0l.jpg"
+    },
+    {
+        "nombre": "Ricardo  Bastidas Alcivar",
+        "equipo": "Ultimate City",
+        "goles": 13,
+        "avatar": "https://minifootballleagues.com/upload/D8/9F/zg3k13dg.jpg"
+    },
+    {
+        "nombre": "Antonio    CASCALES MARTINEZ",
+        "equipo": "Iluminaos FC",
+        "goles": 12,
+        "avatar": "https://minifootballleagues.com/upload/02/41/ttqlivqw.jpg"
+    },
+    {
+        "nombre": "Jordi    Uroz NGuessan",
+        "equipo": "Junta FC",
+        "goles": 11,
+        "avatar": "https://minifootballleagues.com/upload/34/E6/zamynkaa.jpg"
+    },
+    {
+        "nombre": "Cristóbal Martínez Cermeño",
+        "equipo": "Nottingham Miedo",
+        "goles": 9,
+        "avatar": "https://minifootballleagues.com/static/user/default4.png"
+    },
+    {
+        "nombre": "Samuel  Sànchez Muñoz",
+        "equipo": "Ultimate City",
+        "goles": 7,
+        "avatar": "https://minifootballleagues.com/upload/A7/50/u5u3rvqr.jpg"
+    },
+    {
+        "nombre": "Manuel Marín Pérez",
+        "equipo": "Ultimate City",
+        "goles": 7,
+        "avatar": "https://minifootballleagues.com/upload/E8/CB/klkfitxj.jpg"
+    },
+    {
+        "nombre": "Hugo Lopez Hernández",
+        "equipo": "Real Suciedad",
+        "goles": 6,
+        "avatar": "https://minifootballleagues.com/upload/imagesv2/avatars/Avatar_Shoe_01.png"
+    },
+    {
+        "nombre": "Javier López Sánchez",
+        "equipo": "Victory Road",
+        "goles": 6,
+        "avatar": "https://minifootballleagues.com/upload/A1/10/g2mhaugm.jpg"
+    }
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "nombre": "Oscar López Montalbán",
+        "equipo": "Chachineta",
+        "goles": 10,
+        "avatar": "https://minifootballleagues.com/static/user/default1.png"
+    },
+    {
+        "nombre": "David Padial Sierra",
+        "equipo": "Olympique de Ogijares FC",
+        "goles": 10,
+        "avatar": "https://minifootballleagues.com/upload/14/2E/ygmyilak.jpg"
+    },
+    {
+        "nombre": "Francisco Manuel Gonzalez Lopez",
+        "equipo": "Los que no vinieron",
+        "goles": 8,
+        "avatar": "https://minifootballleagues.com/upload/50/10/hawnmz2w.jpg"
+    },
+    {
+        "nombre": "José Miguel   Melgarejo Ortega",
+        "equipo": "Los que no vinieron",
+        "goles": 8,
+        "avatar": "https://minifootballleagues.com/upload/B9/34/s3msyfno.jpg"
+    },
+    {
+        "nombre": "Alberto López Romero",
+        "equipo": "Poseidón",
+        "goles": 8,
+        "avatar": "https://minifootballlleaguesalmeria.mygol.es/upload/imagesv2/avatars/Avatar_Ball_01.png"
+    },
+    {
+        "nombre": "Javier Gomez Moles",
+        "equipo": "Poseidón",
+        "goles": 8,
+        "avatar": "https://minifootballlleaguesalmeria.mygol.es/upload/imagesv2/avatars/OliverAtom 1.png"
+    },
+    {
+        "nombre": "Jean-Pierre Vasconez Ramírez",
+        "equipo": "Hookah Kukah",
+        "goles": 7,
+        "avatar": "https://minifootballleagues.com/upload/43/36/ahdvy2gf.jpg"
+    },
+    {
+        "nombre": "Francisco  Muela Crespo",
+        "equipo": "Chachineta",
+        "goles": 7,
+        "avatar": "https://minifootballleagues.com/upload/02/A8/asuzswlt.jpg"
+    },
+    {
+        "nombre": "Joel Muñoz Segovia",
+        "equipo": "Puertollano FC",
+        "goles": 7,
+        "avatar": "https://minifootballlleaguesalmeria.mygol.es/upload/imagesv2/avatars/Cruyff.png"
+    }
+]

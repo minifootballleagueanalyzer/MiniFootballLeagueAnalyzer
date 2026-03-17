@@ -3,8 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import './Home.css';
 import { ChevronDown } from 'lucide-react';
 import murciaFlag from '../../assets/murcia_flag.jpeg';
+import granadaFlag from '../../assets/granada_flag.png';
 import Leaderboard from '../Leaderboard/Leaderboard';
 import MatrixChart from '../MatrixChart/MatrixChart';
+import TeamScorers from '../TeamScorers/TeamScorers';
 
 const LEAGUES = [
   { id: 'prim_div_mur', name: 'Primera División Murcia', flag: murciaFlag },
@@ -12,7 +14,10 @@ const LEAGUES = [
   { id: 'seg_div_murB', name: 'Segunda División B Murcia', flag: murciaFlag },
   { id: 'ter_div_murA', name: 'Tercera División A Murcia', flag: murciaFlag },
   { id: 'ter_div_murB', name: 'Tercera División B Murcia', flag: murciaFlag },
-  { id: 'cuar_div_mur', name: 'Cuarta División Murcia', flag: murciaFlag }
+  { id: 'cuar_div_mur', name: 'Cuarta División Murcia', flag: murciaFlag },
+  { id: 'prim_div_gra', name: 'Primera División Granada', flag: granadaFlag },
+  { id: 'seg_div_gra', name: 'Segunda División Granada', flag: granadaFlag },
+  { id: 'veteranos_gra', name: 'Liga Veteranos (+35) Granada', flag: granadaFlag },
 ];
 
 // Equipos mock para la interacción inicial (luego vendrán del JSON)
@@ -85,12 +90,43 @@ const Home = ({ rankingsData: initialRankingsData }) => {
   const [selectedTeamA, setSelectedTeamA] = useState('');
   const [selectedTeamB, setSelectedTeamB] = useState('');
   const [rankingsData, setRankingsData] = useState(initialRankingsData || {});
+  const [statsData, setStatsData] = useState([]);
 
   useEffect(() => {
     if (initialRankingsData) {
       setRankingsData(initialRankingsData);
     }
   }, [initialRankingsData]);
+
+  // Fetch stats when league changes
+  useEffect(() => {
+    if (!selectedLeague) {
+      setStatsData([]);
+      return;
+    }
+
+    const fetchStats = async () => {
+      try {
+        const statsFile = selectedLeague.endsWith('_mur') || selectedLeague.endsWith('_gra') || selectedLeague.includes('_div_mur') || selectedLeague.includes('_div_gra')
+          ? `${selectedLeague}_stats.json`
+          : `${selectedLeague}_stats.json`;
+        
+        // Use the relative path to public folder
+        const response = await fetch(`/stats/${statsFile}`);
+        if (response.ok) {
+          const data = await response.json();
+          setStatsData(data);
+        } else {
+          setStatsData([]);
+        }
+      } catch (e) {
+        console.error("Error fetching stats:", e);
+        setStatsData([]);
+      }
+    };
+
+    fetchStats();
+  }, [selectedLeague]);
 
   // Teams to populate the H2H dropdown based on selected league
   const leagueTeams = useMemo(() => {
@@ -194,7 +230,24 @@ const Home = ({ rankingsData: initialRankingsData }) => {
                 logoAway={matchData.logoAway}
                 probHome={matchData.probHome}
                 probAway={matchData.probAway}
+                leagueId={selectedLeague}
               />
+              
+              <motion.div 
+                className="scorers-comparison-grid"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                  gap: '2rem',
+                  marginTop: '2rem'
+                }}
+              >
+                <TeamScorers teamName={matchData.equipoHome} scorersData={statsData} />
+                <TeamScorers teamName={matchData.equipoAway} scorersData={statsData} />
+              </motion.div>
             </motion.div>
         )}
       </AnimatePresence>
@@ -207,7 +260,7 @@ const Home = ({ rankingsData: initialRankingsData }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <Leaderboard rankings={rankingsData[selectedLeague]} />
+            <Leaderboard rankings={rankingsData[selectedLeague]} leagueId={selectedLeague} />
           </motion.div>
         )}
       </AnimatePresence>

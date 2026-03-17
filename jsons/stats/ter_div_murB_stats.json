@@ -1,0 +1,56 @@
+[
+    {
+        "nombre": "Enrique Almagro Karlsen",
+        "equipo": "C.D Tocapelotas",
+        "goles": 13,
+        "avatar": "https://minifootballleagues.com/upload/imagesv2/avatars/Maradona.png"
+    },
+    {
+        "nombre": "Raúl Díaz Tapia",
+        "equipo": "Riomar FC",
+        "goles": 11,
+        "avatar": "https://minifootballleagues.com/upload/42/27/ncicpa5y.jpg"
+    },
+    {
+        "nombre": "Javier Benítez Barragán",
+        "equipo": "C.D Tocapelotas",
+        "goles": 11,
+        "avatar": "https://minifootballleagues.com/upload/6A/10/3v05y5qa.jpg"
+    },
+    {
+        "nombre": "German Sanchez Martinez",
+        "equipo": "Afed FC",
+        "goles": 9,
+        "avatar": "https://minifootballlleaguesalmeria.mygol.es/upload/imagesv2/avatars/LevYashin.png"
+    },
+    {
+        "nombre": "Alberto López Arce",
+        "equipo": "Champagne FC",
+        "goles": 9,
+        "avatar": "https://minifootballlleaguesalmeria.mygol.es/upload/imagesv2/avatars/Avatar_Animal_04.png"
+    },
+    {
+        "nombre": "Alejandro Peco Ruiz",
+        "equipo": "Los Gallos FC",
+        "goles": 9,
+        "avatar": "https://minifootballleagues.com/upload/17/21/3r0oonm3.jpg"
+    },
+    {
+        "nombre": "Antonio Quereda Jiménez",
+        "equipo": "Champagne FC",
+        "goles": 8,
+        "avatar": "https://minifootballleagues.com/upload/AB/9A/a20pdt5w.jpg"
+    },
+    {
+        "nombre": "Javier Cutillas Meseguer",
+        "equipo": "Freemium",
+        "goles": 8,
+        "avatar": "https://minifootballleagues.com/upload/93/93/0zg0emkw.jpg"
+    },
+    {
+        "nombre": "Javier Moya Martínez",
+        "equipo": "Inazuma Cabezo FC",
+        "goles": 7,
+        "avatar": "https://minifootballlleaguesalmeria.mygol.es/upload/imagesv2/avatars/Maradona.png"
+    }
+]

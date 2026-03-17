@@ -28,13 +28,16 @@ function formatEloContext(rankings) {
     ter_div_murA: "3ª División Murciana – Grupo A",
     ter_div_murB: "3ª División Murciana – Grupo B",
     cuar_div_mur: "4ª División Murciana",
+    prim_div_gra: "1ª División de Granada",
+    seg_div_gra: "2ª División de Granada",
+    veteranos_gra: "Liga Veteranos (+35) de Granada",
   };
 
   return Object.entries(rankings)
     .map(([key, equipos]) => {
       const label = divisionLabels[key] || key;
       const rows = equipos
-        .map((e) => `  ${e.posicion}. ${e.equipo} — ELO: ${e.puntos}`)
+        .map((e) => `  ${e.posicion}. ${e.equipo} — ELO: ${e.puntos} (Tendencia últ. 5 jornadas: ${e.tendencia > 0 ? "+" : ""}${e.tendencia})`)
         .join("\n");
       return `### ${label}\n${rows}`;
     })
@@ -64,6 +67,13 @@ const ALLOWED_TOPICS = [
   "división",
   "clasificación",
   "top",
+  "xg",
+  "goles esperados",
+  "peor equipo",
+  "más débil",
+  "últimas jornadas",
+  "rendimiento",
+  "tendencia",
 ];
 
 function isAllowedQuestion(question) {
@@ -95,7 +105,7 @@ export default async function handler(req, res) {
   if (!isAllowedQuestion(question)) {
     return res.status(200).json({
       answer:
-        "Solo puedo responder preguntas sobre rankings ELO, divisiones y estado de forma de los equipos de la MiniFootball League Murciana. ¿Tienes alguna pregunta sobre esos temas?",
+        "Solo puedo responder preguntas sobre rankings ELO, divisiones y estado de forma de los equipos de la MiniFootball League (Murcia y Granada). ¿Tienes alguna pregunta sobre esos temas?",
     });
   }
 
@@ -116,6 +126,9 @@ export default async function handler(req, res) {
     ter_div_murA: "3ª División Murciana – Grupo A",
     ter_div_murB: "3ª División Murciana – Grupo B",
     cuar_div_mur: "4ª División Murciana",
+    prim_div_gra: "1ª División de Granada",
+    seg_div_gra: "2ª División de Granada",
+    veteranos_gra: "Liga Veteranos (+35) de Granada",
   };
   const activeLeague = context && DIVISION_LABELS[context] ? DIVISION_LABELS[context] : null;
   const contextInstruction = activeLeague
@@ -123,23 +136,23 @@ export default async function handler(req, res) {
     : "";
 
   // Construye el prompt con el contexto de la skill league-data-analyst
-  const systemPrompt = `Eres un analista experto de la MiniFootball League Murciana (minifootballleagues.com).
-Tu función es responder preguntas de los usuarios sobre rankings ELO, divisiones y estado de forma de los equipos.
+  const systemPrompt = `Eres un analista experto de la MiniFootball League (minifootballleagues.com), cubriendo las ligas de Murcia y Granada.
+Tu función es responder preguntas de los usuarios sobre rankings ELO, divisiones, estado de forma de los equipos y xG.
 
-## Cómo interpretar el ELO
-- Un valor de ELO más alto indica un mejor estado de forma actual.
-- El ELO parte de 1500 (neutro). Por encima = buen rendimiento; por debajo = bajo rendimiento.
-- Las divisiones disponibles son: 1ª, 2ª Grupo A, 2ª Grupo B, 3ª Grupo A, 3ª Grupo B y 4ª División Murciana.
+## Conceptos Clave
+- **ELO**: Mide el estado de forma. Parte de 1500. Subir puntos ELO significa que el equipo está superando las expectativas.
+- **Tendencia (últ. 5 jornadas)**: Indica cuántos puntos ELO ha ganado o perdido el equipo recientemente. Un valor positivo alto (ej: +80) indica un rendimiento excelente ("on fire"). Un valor negativo (ej: -40) indica una mala racha ("peor rendimiento").
+- **xG (Goles Esperados)**: Mide la calidad de las ocasiones creadas. En este sistema, un equipo con ELO alto tiene mayor xG proyectado. Si te preguntan "¿Qué es el xG?", explícalo como la probabilidad de que un tiro sea gol.
 
 ## Datos actuales de rankings ELO por división
 ${eloContext}${contextInstruction}
 
-## Instrucciones
+## Instrucciones de Respuesta
 - Responde SIEMPRE en español.
-- No uses formato Markdown. Responde como si fuera un chat normal.
-- Sé conciso, claro y amigable. Puédes explayarte si es necesario para explicar conceptos.
-- Usa los datos ELO proporcionados para dar respuestas precisas.
-- Si te preguntan por el "mejor equipo", "peor equipo", "más fuerte" o "más débil" sin especificar división, pregunta la liga.
+- No uses formato Markdown (sin negritas, sin encabezados #). Responde como si fuera un chat de WhatsApp/Telegram.
+- Sé conciso y amigable.
+- Si te preguntan por el mejor o peor equipo de TODAS las ligas, compara los puntos ELO de todos los grupos.
+- Si te preguntan por el rendimiento de las "últimas jornadas", usa SIEMPRE el dato de "Tendencia". El equipo con peor rendimiento es el que tiene la tendencia más negativa.
 - No inventes datos que no estén en el contexto.`;
 
   try {

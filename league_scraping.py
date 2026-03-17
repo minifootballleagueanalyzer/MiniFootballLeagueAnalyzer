@@ -20,12 +20,15 @@ print("Iniciando el navegador fantasma...")
 driver = webdriver.Chrome(options=opciones)
 
 competiciones = [
-    {"nombre": "Primera División", "id": 80, "archivo": "prim_div_mur.json", "jornadas": 18},
-    {"nombre": "Segunda División A", "id": 93, "archivo": "seg_div_murA.json", "jornadas": 9},
-    {"nombre": "Segunda División B", "id": 95, "archivo": "seg_div_murB.json", "jornadas": 9},
-    {"nombre": "Tercera División A", "id": 94, "archivo": "ter_div_murA.json", "jornadas": 9},
-    {"nombre": "Tercera División B", "id": 96, "archivo": "ter_div_murB.json", "jornadas": 9},
-    {"nombre": "Cuarta División", "id": 97, "archivo": "cuar_div_mur.json", "jornadas": 9}
+    {"nombre": "Primera División Murcia", "id": 80, "archivo": "prim_div_mur.json", "jornadas": 18},
+    {"nombre": "Segunda División A Murcia", "id": 93, "archivo": "seg_div_murA.json", "jornadas": 9},
+    {"nombre": "Segunda División B Murcia", "id": 95, "archivo": "seg_div_murB.json", "jornadas": 9},
+    {"nombre": "Tercera División A Murcia", "id": 94, "archivo": "ter_div_murA.json", "jornadas": 9},
+    {"nombre": "Tercera División B Murcia", "id": 96, "archivo": "ter_div_murB.json", "jornadas": 9},
+    {"nombre": "Cuarta División Murcia", "id": 97, "archivo": "cuar_div_mur.json", "jornadas": 9},
+    {"nombre": "Primera División Granada", "id": 98, "archivo": "prim_div_gra.json", "jornadas": 9},
+    {"nombre": "Segunda División Granada", "id": 99, "archivo": "seg_div_gra.json", "jornadas": 9},
+    {"nombre": "Liga Veteranos (+35) Granada", "id": 87, "archivo": "veteranos_gra.json", "jornadas": 14}
 ]
 
 for comp in competiciones:
@@ -116,16 +119,105 @@ for comp in competiciones:
             except Exception as e:
                 print(f"  Error procesando un partido: {e}")
 
-    # --- GUARDAR LOS DATOS DE LA COMPETICIÓN ---
+    # --- GUARDAR LOS PARTIDOS ---
     os.makedirs('jsons', exist_ok=True)
-    ruta_archivo = os.path.join('jsons', str(comp["archivo"]))
-    
-    with open(ruta_archivo, 'w', encoding='utf-8') as archivo_json:
+    ruta_partidos = os.path.join('jsons', str(comp["archivo"]))
+    with open(ruta_partidos, 'w', encoding='utf-8') as archivo_json:
         json.dump(todos_los_partidos, archivo_json, ensure_ascii=False, indent=4)
+    print(f"¡Partidos de {comp['nombre']} completados! Guardado en '{ruta_partidos}'.")
+
+    # --- SCRAPING DE GOLEADORES ---
+    print(f"Scrapeando ránkings de goleadores para {comp['nombre']}...")
+    url_stats = f"https://minifootballleagues.com/tournaments/{comp['id']}?tab=playersranking&stage=0&rankingFilter1=0&rankingFilter2=0"
+    driver.get(url_stats)
+    
+    goleadores = []
+    try:
+        # Esperamos a que cargue la tabla o el card
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, "//*[contains(@class, 'Ranking_playerName') or contains(@class, 'Ranking_text')]"))
+        )
+        time.sleep(2)
         
-    print(f"¡Scraping de {comp['nombre']} completado! Guardado en '{ruta_archivo}'.")
+        soup_stats = BeautifulSoup(driver.page_source, 'html.parser')
+        
+        # 1. Jugador #1 (Tarjeta especial arriba)
+        top_card = soup_stats.find('div', class_=lambda c: c and 'Ranking_topRankingHeaderContainer' in c)
+        if top_card:
+            try:
+                nombre_elem = top_card.find('p', class_=lambda c: c and 'Ranking_playerName' in c)
+                goles_elem = top_card.find('p', class_=lambda c: c and 'Ranking_dorsal' in c)
+                
+                # Imagen
+                img_elem = top_card.find('img', class_=lambda c: c and 'Avatar_img' in c)
+                avatar_url = img_elem['src'] if img_elem and 'src' in img_elem.attrs else ""
+                if avatar_url.startswith('/'):
+                    avatar_url = f"https://minifootballleagues.com{avatar_url}"
+                
+                # Equipo: Buscamos un p hermano o hijo del contenedor que no sea el nombre
+                # O buscamos cualquier enlace de equipo
+                equipo_elem = None
+                links = top_card.find_all('a', href=lambda h: h and '/teams/' in h)
+                # El enlace suele ser /tournaments/X/teams/Y/players/Z, pero a veces hay un link de equipo puro
+                # Si no, buscamos el texto del equipo
+                equipo_nombre = "Desconocido"
+                for link in links:
+                    txt = link.get_text(strip=True)
+                    if txt and txt != nombre_elem.get_text(strip=True):
+                        equipo_nombre = txt
+                        break
+                
+                if nombre_elem and goles_elem:
+                    goleadores.append({
+                        "nombre": nombre_elem.get_text(strip=True),
+                        "equipo": equipo_nombre,
+                        "goles": int(goles_elem.get_text(strip=True)) if goles_elem.get_text(strip=True).isdigit() else 0,
+                        "avatar": avatar_url
+                    })
+            except Exception as e:
+                print(f"  Error en Top #1: {e}")
+
+        # 2. Jugadores #2 en adelante (Tabla)
+        filas = soup_stats.find_all('tr', class_=lambda c: c and 'DataTable_dataTableRow' in c)
+        for fila in filas:
+            try:
+                tds = fila.find_all('td')
+                if len(tds) >= 5:
+                    # Celda 2: Jugador (img + p)
+                    nombre_elem = tds[1].find('p', class_=lambda c: c and 'Ranking_text' in c)
+                    img_elem = tds[1].find('img')
+                    
+                    # Celda 3: Equipo
+                    equipo_elem = tds[2].find('p') or tds[2]
+                    
+                    # Celda 5: Goles (index 4)
+                    goles_val = tds[4].get_text(strip=True)
+                    
+                    if nombre_elem and goles_val.isdigit():
+                        avatar_url = img_elem['src'] if img_elem and 'src' in img_elem.attrs else ""
+                        if avatar_url.startswith('/'):
+                            avatar_url = f"https://minifootballleagues.com{avatar_url}"
+                            
+                        goleadores.append({
+                            "nombre": nombre_elem.get_text(strip=True),
+                            "equipo": equipo_elem.get_text(strip=True),
+                            "goles": int(goles_val),
+                            "avatar": avatar_url
+                        })
+            except Exception as e:
+                continue
+
+    except Exception as e:
+        print(f"  Aviso: No se pudieron cargar las estadísticas de goleadores: {e}")
+
+    # Guardar estadísticas
+    os.makedirs(os.path.join('jsons', 'stats'), exist_ok=True)
+    nombre_stats = comp["archivo"].replace(".json", "_stats.json")
+    ruta_stats = os.path.join('jsons', 'stats', nombre_stats)
+    with open(ruta_stats, 'w', encoding='utf-8') as f:
+        json.dump(goleadores, f, ensure_ascii=False, indent=4)
+    print(f"¡Goleadores de {comp['nombre']} completados! ({len(goleadores)} encontrados)")
 
 # Cerramos el navegador para liberar memoria
 driver.quit()
-
 print("\n¡Todo el scraping completado con éxito!")

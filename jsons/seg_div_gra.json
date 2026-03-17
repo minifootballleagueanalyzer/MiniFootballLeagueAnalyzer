@@ -1,0 +1,407 @@
+[
+    {
+        "jornada": 1,
+        "equipo_local": "Soleras Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/8E/23/52tbyizi.jpg",
+        "equipo_visitante": "Churrinhos Team",
+        "escudo_visitante": "https://minifootballleagues.com/upload/3F/3C/wpitxc3v.jpeg",
+        "goles_local": 3,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Chachineta",
+        "escudo_local": "https://minifootballleagues.com/upload/58/64/44b4dqel.png",
+        "equipo_visitante": "Poseidón",
+        "escudo_visitante": "https://minifootballleagues.com/upload/10/84/hg10hmow.png",
+        "goles_local": 3,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Ludopatas Fc",
+        "escudo_local": "https://minifootballleagues.com/static/team/default3.png",
+        "equipo_visitante": "Hookah Kukah",
+        "escudo_visitante": "https://minifootballleagues.com/upload/1F/97/owqd1myn.png",
+        "goles_local": 1,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Los Que No Vinieron",
+        "escudo_local": "https://minifootballleagues.com/static/team/default8.png",
+        "equipo_visitante": "Puertollano Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/D9/40/jrgko1gs.png",
+        "goles_local": 4,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Olympique De Ogijares Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/E2/7A/ircxde2x.jpg",
+        "equipo_visitante": "Los Simios",
+        "escudo_visitante": "https://minifootballleagues.com/upload/2F/2B/341yiysz.jpg",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Poseidón",
+        "escudo_local": "https://minifootballleagues.com/upload/10/84/hg10hmow.png",
+        "equipo_visitante": "Soleras Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/8E/23/52tbyizi.jpg",
+        "goles_local": 1,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Churrinhos Team",
+        "escudo_local": "https://minifootballleagues.com/upload/3F/3C/wpitxc3v.jpeg",
+        "equipo_visitante": "Los Que No Vinieron",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default8.png",
+        "goles_local": 3,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Puertollano Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/D9/40/jrgko1gs.png",
+        "equipo_visitante": "Ludopatas Fc",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default3.png",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Hookah Kukah",
+        "escudo_local": "https://minifootballleagues.com/upload/1F/97/owqd1myn.png",
+        "equipo_visitante": "Olympique De Ogijares Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/E2/7A/ircxde2x.jpg",
+        "goles_local": 2,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Los Simios",
+        "escudo_local": "https://minifootballleagues.com/upload/2F/2B/341yiysz.jpg",
+        "equipo_visitante": "Chachineta",
+        "escudo_visitante": "https://minifootballleagues.com/upload/58/64/44b4dqel.png",
+        "goles_local": 0,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Poseidón",
+        "escudo_local": "https://minifootballleagues.com/upload/10/84/hg10hmow.png",
+        "equipo_visitante": "Los Simios",
+        "escudo_visitante": "https://minifootballleagues.com/upload/2F/2B/341yiysz.jpg",
+        "goles_local": 5,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Chachineta",
+        "escudo_local": "https://minifootballleagues.com/upload/58/64/44b4dqel.png",
+        "equipo_visitante": "Hookah Kukah",
+        "escudo_visitante": "https://minifootballleagues.com/upload/1F/97/owqd1myn.png",
+        "goles_local": 2,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Olympique De Ogijares Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/E2/7A/ircxde2x.jpg",
+        "equipo_visitante": "Puertollano Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/D9/40/jrgko1gs.png",
+        "goles_local": 4,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Ludopatas Fc",
+        "escudo_local": "https://minifootballleagues.com/static/team/default3.png",
+        "equipo_visitante": "Churrinhos Team",
+        "escudo_visitante": "https://minifootballleagues.com/upload/3F/3C/wpitxc3v.jpeg",
+        "goles_local": 2,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Soleras Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/8E/23/52tbyizi.jpg",
+        "equipo_visitante": "Los Que No Vinieron",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default8.png",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Churrinhos Team",
+        "escudo_local": "https://minifootballleagues.com/upload/3F/3C/wpitxc3v.jpeg",
+        "equipo_visitante": "Olympique De Ogijares Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/E2/7A/ircxde2x.jpg",
+        "goles_local": 1,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Hookah Kukah",
+        "escudo_local": "https://minifootballleagues.com/upload/1F/97/owqd1myn.png",
+        "equipo_visitante": "Poseidón",
+        "escudo_visitante": "https://minifootballleagues.com/upload/10/84/hg10hmow.png",
+        "goles_local": 2,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Puertollano Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/D9/40/jrgko1gs.png",
+        "equipo_visitante": "Chachineta",
+        "escudo_visitante": "https://minifootballleagues.com/upload/58/64/44b4dqel.png",
+        "goles_local": 4,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Los Que No Vinieron",
+        "escudo_local": "https://minifootballleagues.com/static/team/default8.png",
+        "equipo_visitante": "Ludopatas Fc",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default3.png",
+        "goles_local": 5,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Los Simios",
+        "escudo_local": "https://minifootballleagues.com/upload/2F/2B/341yiysz.jpg",
+        "equipo_visitante": "Soleras Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/8E/23/52tbyizi.jpg",
+        "goles_local": 1,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Soleras Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/8E/23/52tbyizi.jpg",
+        "equipo_visitante": "Ludopatas Fc",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default3.png",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Poseidón",
+        "escudo_local": "https://minifootballleagues.com/upload/10/84/hg10hmow.png",
+        "equipo_visitante": "Puertollano Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/D9/40/jrgko1gs.png",
+        "goles_local": 0,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Chachineta",
+        "escudo_local": "https://minifootballleagues.com/upload/58/64/44b4dqel.png",
+        "equipo_visitante": "Churrinhos Team",
+        "escudo_visitante": "https://minifootballleagues.com/upload/3F/3C/wpitxc3v.jpeg",
+        "goles_local": 4,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Olympique De Ogijares Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/E2/7A/ircxde2x.jpg",
+        "equipo_visitante": "Los Que No Vinieron",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default8.png",
+        "goles_local": 1,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Los Simios",
+        "escudo_local": "https://minifootballleagues.com/upload/2F/2B/341yiysz.jpg",
+        "equipo_visitante": "Hookah Kukah",
+        "escudo_visitante": "https://minifootballleagues.com/upload/1F/97/owqd1myn.png",
+        "goles_local": 4,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Hookah Kukah",
+        "escudo_local": "https://minifootballleagues.com/upload/1F/97/owqd1myn.png",
+        "equipo_visitante": "Soleras Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/8E/23/52tbyizi.jpg",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Puertollano Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/D9/40/jrgko1gs.png",
+        "equipo_visitante": "Los Simios",
+        "escudo_visitante": "https://minifootballleagues.com/upload/2F/2B/341yiysz.jpg",
+        "goles_local": 1,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Churrinhos Team",
+        "escudo_local": "https://minifootballleagues.com/upload/3F/3C/wpitxc3v.jpeg",
+        "equipo_visitante": "Poseidón",
+        "escudo_visitante": "https://minifootballleagues.com/upload/10/84/hg10hmow.png",
+        "goles_local": 1,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Los Que No Vinieron",
+        "escudo_local": "https://minifootballleagues.com/static/team/default8.png",
+        "equipo_visitante": "Chachineta",
+        "escudo_visitante": "https://minifootballleagues.com/upload/58/64/44b4dqel.png",
+        "goles_local": 1,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Ludopatas Fc",
+        "escudo_local": "https://minifootballleagues.com/static/team/default3.png",
+        "equipo_visitante": "Olympique De Ogijares Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/E2/7A/ircxde2x.jpg",
+        "goles_local": 1,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Chachineta",
+        "escudo_local": "https://minifootballleagues.com/upload/58/64/44b4dqel.png",
+        "equipo_visitante": "Ludopatas Fc",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default3.png",
+        "goles_local": 8,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Los Simios",
+        "escudo_local": "https://minifootballleagues.com/upload/2F/2B/341yiysz.jpg",
+        "equipo_visitante": "Churrinhos Team",
+        "escudo_visitante": "https://minifootballleagues.com/upload/3F/3C/wpitxc3v.jpeg",
+        "goles_local": 2,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Poseidón",
+        "escudo_local": "https://minifootballleagues.com/upload/10/84/hg10hmow.png",
+        "equipo_visitante": "Los Que No Vinieron",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default8.png",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Soleras Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/8E/23/52tbyizi.jpg",
+        "equipo_visitante": "Olympique De Ogijares Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/E2/7A/ircxde2x.jpg",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Hookah Kukah",
+        "escudo_local": "https://minifootballleagues.com/upload/1F/97/owqd1myn.png",
+        "equipo_visitante": "Puertollano Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/D9/40/jrgko1gs.png",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Ludopatas Fc",
+        "escudo_local": "https://minifootballleagues.com/static/team/default3.png",
+        "equipo_visitante": "Poseidón",
+        "escudo_visitante": "https://minifootballleagues.com/upload/10/84/hg10hmow.png",
+        "goles_local": 0,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Olympique De Ogijares Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/E2/7A/ircxde2x.jpg",
+        "equipo_visitante": "Chachineta",
+        "escudo_visitante": "https://minifootballleagues.com/upload/58/64/44b4dqel.png",
+        "goles_local": 4,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Los Que No Vinieron",
+        "escudo_local": "https://minifootballleagues.com/static/team/default8.png",
+        "equipo_visitante": "Los Simios",
+        "escudo_visitante": "https://minifootballleagues.com/upload/2F/2B/341yiysz.jpg",
+        "goles_local": 6,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Soleras Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/8E/23/52tbyizi.jpg",
+        "equipo_visitante": "Puertollano Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/D9/40/jrgko1gs.png",
+        "goles_local": 4,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Churrinhos Team",
+        "escudo_local": "https://minifootballleagues.com/upload/3F/3C/wpitxc3v.jpeg",
+        "equipo_visitante": "Hookah Kukah",
+        "escudo_visitante": "https://minifootballleagues.com/upload/1F/97/owqd1myn.png",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Puertollano Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/D9/40/jrgko1gs.png",
+        "equipo_visitante": "Churrinhos Team",
+        "escudo_visitante": "https://minifootballleagues.com/upload/3F/3C/wpitxc3v.jpeg",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Los Simios",
+        "escudo_local": "https://minifootballleagues.com/upload/2F/2B/341yiysz.jpg",
+        "equipo_visitante": "Ludopatas Fc",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default3.png",
+        "goles_local": 2,
+        "goles_visitante": 8
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Hookah Kukah",
+        "escudo_local": "https://minifootballleagues.com/upload/1F/97/owqd1myn.png",
+        "equipo_visitante": "Los Que No Vinieron",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default8.png",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Poseidón",
+        "escudo_local": "https://minifootballleagues.com/upload/10/84/hg10hmow.png",
+        "equipo_visitante": "Olympique De Ogijares Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/E2/7A/ircxde2x.jpg",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Chachineta",
+        "escudo_local": "https://minifootballleagues.com/upload/58/64/44b4dqel.png",
+        "equipo_visitante": "Soleras Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/8E/23/52tbyizi.jpg",
+        "goles_local": 4,
+        "goles_visitante": 1
+    }
+]

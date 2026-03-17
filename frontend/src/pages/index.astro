@@ -2,16 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import HomeReact from '../components/Home/Home.jsx';
 
-// SSG: Fetch data at build time
-let rankingsData = {};
-try {
-    const res = await fetch('https://raw.githubusercontent.com/minifootballleagueanalyzer/minifootballleagueanalyzer/main/frontend/public/elo_rankings.json');
-    if (res.ok) {
-        rankingsData = await res.json();
-    }
-} catch (e) {
-    console.error("Error fetching rankings during build:", e);
-}
+import rankingsData from '../../public/elo_rankings.json';
 ---
 
 <Layout title="MFL Analyzer - Inicio">

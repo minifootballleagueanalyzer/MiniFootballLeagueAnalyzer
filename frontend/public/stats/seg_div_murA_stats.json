@@ -1,0 +1,56 @@
+[
+    {
+        "nombre": "Miguel Ángel  Pagan Amores",
+        "equipo": "Billie's Ballers",
+        "goles": 13,
+        "avatar": "https://minifootballleagues.com/upload/3B/B6/2v0c1vsg.jpg"
+    },
+    {
+        "nombre": "Manuel  Leon Gomez",
+        "equipo": "Perikles",
+        "goles": 11,
+        "avatar": "https://minifootballlleaguesalmeria.mygol.es/upload/imagesv2/avatars/Eusebio.png"
+    },
+    {
+        "nombre": "Adrián  Fructuoso Jodar",
+        "equipo": "El Palmar City",
+        "goles": 11,
+        "avatar": "https://minifootballleagues.com/upload/76/FC/n23z0hvj.jpg"
+    },
+    {
+        "nombre": "Alejandro Mayo Monreal",
+        "equipo": "Tiki Taka",
+        "goles": 9,
+        "avatar": "https://minifootballleagues.com/upload/2B/41/41o2j424.jpg"
+    },
+    {
+        "nombre": "Smith lekan Oworu Boris",
+        "equipo": "Reventaos FC",
+        "goles": 9,
+        "avatar": "https://minifootballleagues.com/upload/71/45/r5nxxjlw.jpg"
+    },
+    {
+        "nombre": "Francisco Fernández Díaz",
+        "equipo": "Perikles",
+        "goles": 9,
+        "avatar": "https://minifootballleagues.com/upload/1D/F2/25yineuh.jpg"
+    },
+    {
+        "nombre": "Martín  García Rodríguez",
+        "equipo": "Billie's Ballers",
+        "goles": 8,
+        "avatar": "https://minifootballleagues.com/upload/imagesv2/avatars/OliverAtom 1.png"
+    },
+    {
+        "nombre": "Pablo  Espinosa Fernández",
+        "equipo": "El Palmar City",
+        "goles": 7,
+        "avatar": "https://minifootballlleaguesalmeria.mygol.es/upload/imagesv2/avatars/image 3005.png"
+    },
+    {
+        "nombre": "Serafin Noriega Guillén",
+        "equipo": "Cvstodia FC",
+        "goles": 7,
+        "avatar": "https://minifootballleagues.com/upload/27/BA/x1isbvzy.jpg"
+    }
+]

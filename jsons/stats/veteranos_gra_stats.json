@@ -1,0 +1,56 @@
+[
+    {
+        "nombre": "** Daniel Guijarro Torres",
+        "equipo": "Celtic Pulianas",
+        "goles": 12,
+        "avatar": "https://minifootballleagues.com/upload/24/90/td3uzzlc.jpg"
+    },
+    {
+        "nombre": "** Fernando Fernández Espínola",
+        "equipo": "Atlético La Zubia",
+        "goles": 8,
+        "avatar": "https://minifootballleagues.com/upload/D5/2A/xsb4mjea.jpg"
+    },
+    {
+        "nombre": "Pablo Martinez  Lao",
+        "equipo": "Celtic Pulianas",
+        "goles": 7,
+        "avatar": "https://minifootballleagues.com/upload/imagesv2/avatars/Avatar_Ball_01.png"
+    },
+    {
+        "nombre": "Moisés  Gómez Moreno",
+        "equipo": "Joanfran Albolote",
+        "goles": 7,
+        "avatar": "https://minifootballleagues.com/upload/imagesv2/avatars/OliverAtom 1.png"
+    },
+    {
+        "nombre": "Richard  López Zapata",
+        "equipo": "Joanfran Albolote",
+        "goles": 7,
+        "avatar": "https://minifootballleagues.com/upload/3A/C8/vjjchjj5.jpg"
+    },
+    {
+        "nombre": "José Prieto Peralta",
+        "equipo": "Joanfran Albolote",
+        "goles": 6,
+        "avatar": "https://minifootballleagues.com/upload/D2/07/4crhnwyp.jpg"
+    },
+    {
+        "nombre": "Manuel Sánchez Fernández",
+        "equipo": "Monachil",
+        "goles": 6,
+        "avatar": "https://minifootballleagues.com/upload/16/D4/b2wphlfx.jpg"
+    },
+    {
+        "nombre": "José Fernández Cantarero",
+        "equipo": "Monachil",
+        "goles": 5,
+        "avatar": "https://minifootballleagues.com/upload/imagesv2/avatars/Avatar_Ball_04.png"
+    },
+    {
+        "nombre": "Alfredo Quedada Izquierdo",
+        "equipo": "Churriana",
+        "goles": 5,
+        "avatar": "https://minifootballleagues.com/upload/0C/F8/vk2tun12.jpg"
+    }
+]

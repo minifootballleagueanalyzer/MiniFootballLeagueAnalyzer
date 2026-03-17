@@ -1,8 +1,11 @@
 import React from 'react';
 import './Leaderboard.css';
 import murciaFlag from '../../assets/murcia_flag.jpeg';
+import granadaFlag from '../../assets/granada_flag.png';
 
-const Leaderboard = ({ rankings = [] }) => {
+const Leaderboard = ({ rankings = [], leagueId = '' }) => {
+  const defaultFlag = leagueId.includes('_gra') || leagueId.includes('veteranos_gra') ? granadaFlag : murciaFlag;
+  const flagSrc = typeof defaultFlag === 'object' ? defaultFlag.src : defaultFlag;
 
   if (!rankings || rankings.length === 0) {
     return (
@@ -32,10 +35,10 @@ const Leaderboard = ({ rankings = [] }) => {
 
             <div className="col-team">
               <img
-                src={team.logo || (typeof murciaFlag === 'object' ? murciaFlag.src : murciaFlag)}
+                src={team.logo || flagSrc}
                 alt={team.equipo}
                 className="team-logo-image"
-                onError={(e) => { e.target.src = typeof murciaFlag === 'object' ? murciaFlag.src : murciaFlag; }}
+                onError={(e) => { e.target.src = flagSrc; }}
               />
               <span className="team-name">{team.equipo}</span>
             </div>

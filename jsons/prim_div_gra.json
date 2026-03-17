@@ -1,0 +1,398 @@
+[
+    {
+        "jornada": 1,
+        "equipo_local": "Uqqa Shisha Fútbol",
+        "escudo_local": "https://minifootballleagues.com/upload/1A/32/oakllykt.PNG",
+        "equipo_visitante": "Ultimate Granada",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default1.png",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Nazarí Rentahoy",
+        "escudo_local": "https://minifootballleagues.com/upload/29/BA/pf05m1qa.JPG",
+        "equipo_visitante": "Granada Orígen",
+        "escudo_visitante": "https://minifootballleagues.com/upload/96/BC/f0rzco1b.png",
+        "goles_local": 1,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Piemonte Calcio",
+        "escudo_local": "https://minifootballleagues.com/upload/C9/85/wvv2jwg4.jpg",
+        "equipo_visitante": "Ud Figares",
+        "escudo_visitante": "https://minifootballleagues.com/upload/2C/AB/snidsgz2.png",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Scaloneta Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/B1/B3/mwfdg4vo.jpeg",
+        "equipo_visitante": "Napoli",
+        "escudo_visitante": "https://minifootballleagues.com/upload/ED/1C/2fbyqc3b.jpg",
+        "goles_local": 2,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 1,
+        "equipo_local": "Peña 90+3",
+        "escudo_local": "https://minifootballleagues.com/upload/7A/88/ge5um3u2.jpg",
+        "equipo_visitante": "Cabalas Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/4D/1D/zc4brces.jpeg",
+        "goles_local": 2,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Cabalas Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/4D/1D/zc4brces.jpeg",
+        "equipo_visitante": "Uqqa Shisha Fútbol",
+        "escudo_visitante": "https://minifootballleagues.com/upload/1A/32/oakllykt.PNG",
+        "goles_local": 6,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Granada Orígen",
+        "escudo_local": "https://minifootballleagues.com/upload/96/BC/f0rzco1b.png",
+        "equipo_visitante": "Piemonte Calcio",
+        "escudo_visitante": "https://minifootballleagues.com/upload/C9/85/wvv2jwg4.jpg",
+        "goles_local": 4,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Ultimate Granada",
+        "escudo_local": "https://minifootballleagues.com/static/team/default1.png",
+        "equipo_visitante": "Nazarí Rentahoy",
+        "escudo_visitante": "https://minifootballleagues.com/upload/29/BA/pf05m1qa.JPG",
+        "goles_local": 4,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Napoli",
+        "escudo_local": "https://minifootballleagues.com/upload/ED/1C/2fbyqc3b.jpg",
+        "equipo_visitante": "Peña 90+3",
+        "escudo_visitante": "https://minifootballleagues.com/upload/7A/88/ge5um3u2.jpg",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 2,
+        "equipo_local": "Ud Figares",
+        "escudo_local": "https://minifootballleagues.com/upload/2C/AB/snidsgz2.png",
+        "equipo_visitante": "Scaloneta Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/B1/B3/mwfdg4vo.jpeg",
+        "goles_local": 4,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Peña 90+3",
+        "escudo_local": "https://minifootballleagues.com/upload/7A/88/ge5um3u2.jpg",
+        "equipo_visitante": "Ud Figares",
+        "escudo_visitante": "https://minifootballleagues.com/upload/2C/AB/snidsgz2.png",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Scaloneta Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/B1/B3/mwfdg4vo.jpeg",
+        "equipo_visitante": "Granada Orígen",
+        "escudo_visitante": "https://minifootballleagues.com/upload/96/BC/f0rzco1b.png",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Uqqa Shisha Fútbol",
+        "escudo_local": "https://minifootballleagues.com/upload/1A/32/oakllykt.PNG",
+        "equipo_visitante": "Nazarí Rentahoy",
+        "escudo_visitante": "https://minifootballleagues.com/upload/29/BA/pf05m1qa.JPG",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Piemonte Calcio",
+        "escudo_local": "https://minifootballleagues.com/upload/C9/85/wvv2jwg4.jpg",
+        "equipo_visitante": "Ultimate Granada",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default1.png",
+        "goles_local": 1,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 3,
+        "equipo_local": "Cabalas Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/4D/1D/zc4brces.jpeg",
+        "equipo_visitante": "Napoli",
+        "escudo_visitante": "https://minifootballleagues.com/upload/ED/1C/2fbyqc3b.jpg",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Granada Orígen",
+        "escudo_local": "https://minifootballleagues.com/upload/96/BC/f0rzco1b.png",
+        "equipo_visitante": "Peña 90+3",
+        "escudo_visitante": "https://minifootballleagues.com/upload/7A/88/ge5um3u2.jpg",
+        "goles_local": 4,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Ultimate Granada",
+        "escudo_local": "https://minifootballleagues.com/static/team/default1.png",
+        "equipo_visitante": "Scaloneta Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/B1/B3/mwfdg4vo.jpeg",
+        "goles_local": 6,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Ud Figares",
+        "escudo_local": "https://minifootballleagues.com/upload/2C/AB/snidsgz2.png",
+        "equipo_visitante": "Cabalas Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/4D/1D/zc4brces.jpeg",
+        "goles_local": 3,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Nazarí Rentahoy",
+        "escudo_local": "https://minifootballleagues.com/upload/29/BA/pf05m1qa.JPG",
+        "equipo_visitante": "Piemonte Calcio",
+        "escudo_visitante": "https://minifootballleagues.com/upload/C9/85/wvv2jwg4.jpg",
+        "goles_local": 4,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 4,
+        "equipo_local": "Napoli",
+        "escudo_local": "https://minifootballleagues.com/upload/ED/1C/2fbyqc3b.jpg",
+        "equipo_visitante": "Uqqa Shisha Fútbol",
+        "escudo_visitante": "https://minifootballleagues.com/upload/1A/32/oakllykt.PNG",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Cabalas Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/4D/1D/zc4brces.jpeg",
+        "equipo_visitante": "Granada Orígen",
+        "escudo_visitante": "https://minifootballleagues.com/upload/96/BC/f0rzco1b.png",
+        "goles_local": 4,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Uqqa Shisha Fútbol",
+        "escudo_local": "https://minifootballleagues.com/upload/1A/32/oakllykt.PNG",
+        "equipo_visitante": "Piemonte Calcio",
+        "escudo_visitante": "https://minifootballleagues.com/upload/C9/85/wvv2jwg4.jpg",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Peña 90+3",
+        "escudo_local": "https://minifootballleagues.com/upload/7A/88/ge5um3u2.jpg",
+        "equipo_visitante": "Ultimate Granada",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default1.png",
+        "goles_local": 4,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Scaloneta Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/B1/B3/mwfdg4vo.jpeg",
+        "equipo_visitante": "Nazarí Rentahoy",
+        "escudo_visitante": "https://minifootballleagues.com/upload/29/BA/pf05m1qa.JPG",
+        "goles_local": 4,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 5,
+        "equipo_local": "Napoli",
+        "escudo_local": "https://minifootballleagues.com/upload/ED/1C/2fbyqc3b.jpg",
+        "equipo_visitante": "Ud Figares",
+        "escudo_visitante": "https://minifootballleagues.com/upload/2C/AB/snidsgz2.png",
+        "goles_local": 3,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Ud Figares",
+        "escudo_local": "https://minifootballleagues.com/upload/2C/AB/snidsgz2.png",
+        "equipo_visitante": "Uqqa Shisha Fútbol",
+        "escudo_visitante": "https://minifootballleagues.com/upload/1A/32/oakllykt.PNG",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Ultimate Granada",
+        "escudo_local": "https://minifootballleagues.com/static/team/default1.png",
+        "equipo_visitante": "Cabalas Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/4D/1D/zc4brces.jpeg",
+        "goles_local": 2,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Granada Orígen",
+        "escudo_local": "https://minifootballleagues.com/upload/96/BC/f0rzco1b.png",
+        "equipo_visitante": "Napoli",
+        "escudo_visitante": "https://minifootballleagues.com/upload/ED/1C/2fbyqc3b.jpg",
+        "goles_local": 0,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Nazarí Rentahoy",
+        "escudo_local": "https://minifootballleagues.com/upload/29/BA/pf05m1qa.JPG",
+        "equipo_visitante": "Peña 90+3",
+        "escudo_visitante": "https://minifootballleagues.com/upload/7A/88/ge5um3u2.jpg",
+        "goles_local": 5,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 6,
+        "equipo_local": "Piemonte Calcio",
+        "escudo_local": "https://minifootballleagues.com/upload/C9/85/wvv2jwg4.jpg",
+        "equipo_visitante": "Scaloneta Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/B1/B3/mwfdg4vo.jpeg",
+        "goles_local": 1,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Cabalas Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/4D/1D/zc4brces.jpeg",
+        "equipo_visitante": "Nazarí Rentahoy",
+        "escudo_visitante": "https://minifootballleagues.com/upload/29/BA/pf05m1qa.JPG",
+        "goles_local": 7,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Ud Figares",
+        "escudo_local": "https://minifootballleagues.com/upload/2C/AB/snidsgz2.png",
+        "equipo_visitante": "Granada Orígen",
+        "escudo_visitante": "https://minifootballleagues.com/upload/96/BC/f0rzco1b.png",
+        "goles_local": 2,
+        "goles_visitante": 4
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Napoli",
+        "escudo_local": "https://minifootballleagues.com/upload/ED/1C/2fbyqc3b.jpg",
+        "equipo_visitante": "Ultimate Granada",
+        "escudo_visitante": "https://minifootballleagues.com/static/team/default1.png",
+        "goles_local": 6,
+        "goles_visitante": 2
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Peña 90+3",
+        "escudo_local": "https://minifootballleagues.com/upload/7A/88/ge5um3u2.jpg",
+        "equipo_visitante": "Piemonte Calcio",
+        "escudo_visitante": "https://minifootballleagues.com/upload/C9/85/wvv2jwg4.jpg",
+        "goles_local": 2,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 7,
+        "equipo_local": "Uqqa Shisha Fútbol",
+        "escudo_local": "https://minifootballleagues.com/upload/1A/32/oakllykt.PNG",
+        "equipo_visitante": "Scaloneta Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/B1/B3/mwfdg4vo.jpeg",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Piemonte Calcio",
+        "escudo_local": "https://minifootballleagues.com/upload/C9/85/wvv2jwg4.jpg",
+        "equipo_visitante": "Cabalas Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/4D/1D/zc4brces.jpeg",
+        "goles_local": 3,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Ultimate Granada",
+        "escudo_local": "https://minifootballleagues.com/static/team/default1.png",
+        "equipo_visitante": "Ud Figares",
+        "escudo_visitante": "https://minifootballleagues.com/upload/2C/AB/snidsgz2.png",
+        "goles_local": 2,
+        "goles_visitante": 5
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Nazarí Rentahoy",
+        "escudo_local": "https://minifootballleagues.com/upload/29/BA/pf05m1qa.JPG",
+        "equipo_visitante": "Napoli",
+        "escudo_visitante": "https://minifootballleagues.com/upload/ED/1C/2fbyqc3b.jpg",
+        "goles_local": 5,
+        "goles_visitante": 6
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Scaloneta Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/B1/B3/mwfdg4vo.jpeg",
+        "equipo_visitante": "Peña 90+3",
+        "escudo_visitante": "https://minifootballleagues.com/upload/7A/88/ge5um3u2.jpg",
+        "goles_local": 3,
+        "goles_visitante": 0
+    },
+    {
+        "jornada": 8,
+        "equipo_local": "Uqqa Shisha Fútbol",
+        "escudo_local": "https://minifootballleagues.com/upload/1A/32/oakllykt.PNG",
+        "equipo_visitante": "Granada Orígen",
+        "escudo_visitante": "https://minifootballleagues.com/upload/96/BC/f0rzco1b.png",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Ud Figares",
+        "escudo_local": "https://minifootballleagues.com/upload/2C/AB/snidsgz2.png",
+        "equipo_visitante": "Nazarí Rentahoy",
+        "escudo_visitante": "https://minifootballleagues.com/upload/29/BA/pf05m1qa.JPG",
+        "goles_local": 1,
+        "goles_visitante": 7
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Cabalas Fc",
+        "escudo_local": "https://minifootballleagues.com/upload/4D/1D/zc4brces.jpeg",
+        "equipo_visitante": "Scaloneta Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/B1/B3/mwfdg4vo.jpeg",
+        "goles_local": 2,
+        "goles_visitante": 1
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Napoli",
+        "escudo_local": "https://minifootballleagues.com/upload/ED/1C/2fbyqc3b.jpg",
+        "equipo_visitante": "Piemonte Calcio",
+        "escudo_visitante": "https://minifootballleagues.com/upload/C9/85/wvv2jwg4.jpg",
+        "goles_local": 12,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 9,
+        "equipo_local": "Peña 90+3",
+        "escudo_local": "https://minifootballleagues.com/upload/7A/88/ge5um3u2.jpg",
+        "equipo_visitante": "Uqqa Shisha Fútbol",
+        "escudo_visitante": "https://minifootballleagues.com/upload/1A/32/oakllykt.PNG",
+        "goles_local": 3,
+        "goles_visitante": 0
+    }
+]
