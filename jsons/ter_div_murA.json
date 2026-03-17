@@ -226,6 +226,15 @@
     },
     {
         "jornada": 6,
+        "equipo_local": "Recreativo De Juerga",
+        "escudo_local": "https://minifootballleagues.com/upload/3A/35/snoee1ht.PNG",
+        "equipo_visitante": "Titanes Fc",
+        "escudo_visitante": "https://minifootballleagues.com/upload/imagesv2/teams/TeamShield22.png",
+        "goles_local": 0,
+        "goles_visitante": 3
+    },
+    {
+        "jornada": 6,
         "equipo_local": "Ribereño Fc",
         "escudo_local": "https://minifootballleagues.com/upload/8A/EA/pznwwh4l.png",
         "equipo_visitante": "Recreativo Murcia Fc",

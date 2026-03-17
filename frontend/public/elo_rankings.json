@@ -185,73 +185,11 @@
             "logo": "https://minifootballleagues.com/upload/6D/E6/ujurv0tz.jpeg"
         }
     ],
-    "seg_div_murB": [
-        {
-            "posicion": 1,
-            "equipo": "Niupi",
-            "puntos": 1592,
-            "logo": "https://minifootballleagues.com/upload/D9/AD/t2wbu3ur.jpeg"
-        },
-        {
-            "posicion": 2,
-            "equipo": "Fc La Yanka",
-            "puntos": 1573,
-            "logo": "https://minifootballleagues.com/upload/CD/BD/u13gousq.jpg"
-        },
-        {
-            "posicion": 3,
-            "equipo": "Los Trakas",
-            "puntos": 1568,
-            "logo": "https://minifootballleagues.com/upload/56/A4/vp0k0dtu.jpg"
-        },
-        {
-            "posicion": 4,
-            "equipo": "Patriot",
-            "puntos": 1558,
-            "logo": "https://minifootballleagues.com/upload/3D/F0/cwcf5fiw.jpeg"
-        },
-        {
-            "posicion": 5,
-            "equipo": "Sabomur Stars",
-            "puntos": 1553,
-            "logo": "https://minifootballleagues.com/upload/D5/BC/mcozlixp.jpg"
-        },
-        {
-            "posicion": 6,
-            "equipo": "Raal Murcia",
-            "puntos": 1524,
-            "logo": "https://minifootballleagues.com/upload/82/20/ncvi30wt.png"
-        },
-        {
-            "posicion": 7,
-            "equipo": "Llamas Barber Studio",
-            "puntos": 1486,
-            "logo": "https://minifootballleagues.com/static/team/default5.png"
-        },
-        {
-            "posicion": 8,
-            "equipo": "Blackout Fc",
-            "puntos": 1398,
-            "logo": "https://minifootballleagues.com/upload/B1/40/e4q3nk14.png"
-        },
-        {
-            "posicion": 9,
-            "equipo": "Federicos Team",
-            "puntos": 1382,
-            "logo": "https://minifootballleagues.com/upload/D7/C4/wlxyezba.png"
-        },
-        {
-            "posicion": 10,
-            "equipo": "Distrito Internazionale  Fc",
-            "puntos": 1365,
-            "logo": "https://minifootballleagues.com/upload/5A/8C/fm3wnzw2.png"
-        }
-    ],
     "ter_div_murA": [
         {
             "posicion": 1,
             "equipo": "30835 Fc",
-            "puntos": 1645,
+            "puntos": 1646,
             "logo": "https://minifootballleagues.com/upload/C9/7E/5p11g402.jpeg"
         },
         {
@@ -263,7 +201,7 @@
         {
             "posicion": 3,
             "equipo": "Mambas Fc",
-            "puntos": 1561,
+            "puntos": 1559,
             "logo": "https://minifootballleagues.com/upload/77/F9/11xeiges.png"
         },
         {
@@ -281,19 +219,19 @@
         {
             "posicion": 6,
             "equipo": "Perumur Fc",
-            "puntos": 1503,
+            "puntos": 1504,
             "logo": "https://minifootballleagues.com/upload/21/05/qlxxo5ik.jpeg"
         },
         {
             "posicion": 7,
             "equipo": "La Tubería De Oro",
-            "puntos": 1498,
+            "puntos": 1496,
             "logo": "https://minifootballleagues.com/upload/52/49/ytria2j4.JPG"
         },
         {
             "posicion": 8,
             "equipo": "Titanes Fc",
-            "puntos": 1417,
+            "puntos": 1434,
             "logo": "https://minifootballleagues.com/upload/imagesv2/teams/TeamShield22.png"
         },
         {
@@ -305,7 +243,7 @@
         {
             "posicion": 10,
             "equipo": "Recreativo De Juerga",
-            "puntos": 1348,
+            "puntos": 1332,
             "logo": "https://minifootballleagues.com/upload/3A/35/snoee1ht.PNG"
         }
     ],
@@ -369,6 +307,68 @@
             "equipo": "Inazuma Cabezo Fc",
             "puntos": 1385,
             "logo": "https://minifootballleagues.com/upload/A3/65/xgx1b3pi.PNG"
+        }
+    ],
+    "seg_div_murB": [
+        {
+            "posicion": 1,
+            "equipo": "Niupi",
+            "puntos": 1592,
+            "logo": "https://minifootballleagues.com/upload/D9/AD/t2wbu3ur.jpeg"
+        },
+        {
+            "posicion": 2,
+            "equipo": "Fc La Yanka",
+            "puntos": 1573,
+            "logo": "https://minifootballleagues.com/upload/CD/BD/u13gousq.jpg"
+        },
+        {
+            "posicion": 3,
+            "equipo": "Los Trakas",
+            "puntos": 1568,
+            "logo": "https://minifootballleagues.com/upload/56/A4/vp0k0dtu.jpg"
+        },
+        {
+            "posicion": 4,
+            "equipo": "Patriot",
+            "puntos": 1558,
+            "logo": "https://minifootballleagues.com/upload/3D/F0/cwcf5fiw.jpeg"
+        },
+        {
+            "posicion": 5,
+            "equipo": "Sabomur Stars",
+            "puntos": 1553,
+            "logo": "https://minifootballleagues.com/upload/D5/BC/mcozlixp.jpg"
+        },
+        {
+            "posicion": 6,
+            "equipo": "Raal Murcia",
+            "puntos": 1524,
+            "logo": "https://minifootballleagues.com/upload/82/20/ncvi30wt.png"
+        },
+        {
+            "posicion": 7,
+            "equipo": "Llamas Barber Studio",
+            "puntos": 1486,
+            "logo": "https://minifootballleagues.com/static/team/default5.png"
+        },
+        {
+            "posicion": 8,
+            "equipo": "Blackout Fc",
+            "puntos": 1398,
+            "logo": "https://minifootballleagues.com/upload/B1/40/e4q3nk14.png"
+        },
+        {
+            "posicion": 9,
+            "equipo": "Federicos Team",
+            "puntos": 1382,
+            "logo": "https://minifootballleagues.com/upload/D7/C4/wlxyezba.png"
+        },
+        {
+            "posicion": 10,
+            "equipo": "Distrito Internazionale  Fc",
+            "puntos": 1365,
+            "logo": "https://minifootballleagues.com/upload/5A/8C/fm3wnzw2.png"
         }
     ]
 }
