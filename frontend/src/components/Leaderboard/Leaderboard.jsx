@@ -3,11 +3,19 @@ import './Leaderboard.css';
 import murciaFlag from '../../assets/murcia_flag.jpeg';
 import granadaFlag from '../../assets/granada_flag.png';
 import { useTranslation } from '../../hooks/useTranslation';
+import { useStore } from '@nanostores/react';
+import { favoritesStore, toggleFavorite, isFavoritesLoading } from '../../stores/favoritesStore';
+import { Star } from 'lucide-react';
 
 const Leaderboard = ({ rankings = [], leagueId = '' }) => {
   const { t } = useTranslation();
+  const favorites = useStore(favoritesStore);
+  const isLoading = useStore(isFavoritesLoading);
+  
   const defaultFlag = leagueId.includes('_gra') || leagueId.includes('veteranos_gra') ? granadaFlag : murciaFlag;
   const flagSrc = typeof defaultFlag === 'object' ? defaultFlag.src : defaultFlag;
+
+  const isFav = (teamName) => favorites.some(f => f.team_name === teamName && f.league_id === leagueId);
 
   if (!rankings || rankings.length === 0) {
     return (
@@ -36,6 +44,18 @@ const Leaderboard = ({ rankings = [], leagueId = '' }) => {
             </div>
 
             <div className="col-team">
+              <span 
+                className={`favorite-star ${isFav(team.equipo) ? 'active' : ''}`}
+                onClick={() => !isLoading && toggleFavorite(team.equipo, leagueId)}
+                title={isFav(team.equipo) ? "Quitar de Mis favoritos" : "Añadir a Mis favoritos"}
+              >
+                <Star 
+                  size={18} 
+                  fill={isFav(team.equipo) ? "#000" : "transparent"} 
+                  stroke={isFav(team.equipo) ? "#eab308" : "#9ca3af"} 
+                  strokeWidth={2}
+                />
+              </span>
               <img
                 src={team.logo || flagSrc}
                 alt={team.equipo}
