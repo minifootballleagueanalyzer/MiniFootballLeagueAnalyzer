@@ -1,18 +1,18 @@
 ---
-# PLANTILLA MAESTRA (BASE DE LA WEB)
+// PLANTILLA MAESTRA (BASE DE LA WEB)
 
-# Importo los componentes principales que siempre estarán presentes en mi web
+// Importo los componentes principales que siempre estarán presentes en mi web
 import Header from '../components/Header/Header';
 import ChatbotWidget from '../components/ChatbotWidget/ChatbotWidget';
 
-# Traigo mi archivo de CSS centralizado para que todos los estilos básicos se carguen en el layout
+// Traigo mi archivo de CSS centralizado para que todos los estilos básicos se carguen en el layout
 import '../index.css';
 
 // IMPORTO las herramientas de Vercel para monitorizar el tráfico y el rendimiento desde el primer segundo
 import Analytics from '@vercel/analytics/astro';
 import SpeedInsights from '@vercel/speed-insights/astro';
 
-# Defino que este Layout puede recibir un 'title' como propiedad
+// Defino que este Layout puede recibir un 'title' como propiedad
 const { title } = Astro.props;
 ---
 
