@@ -2,6 +2,8 @@
 import Header from '../components/Header/Header';
 import ChatbotWidget from '../components/ChatbotWidget/ChatbotWidget';
 import '../index.css';
+// IMPORTO el componente de analíticas de Vercel para registrar las visitas a la web
+import Analytics from '@vercel/analytics/astro';
 
 const { title } = Astro.props;
 ---
@@ -17,6 +19,8 @@ const { title } = Astro.props;
 </head>
 <body>
     <div class="app-container">
+        <!-- RENDERIZO el componente de Analytics de Vercel para que empiece a medir el tráfico del sitio -->
+        <Analytics />
         <Header client:load />
         <main class="main-content">
             <slot />
